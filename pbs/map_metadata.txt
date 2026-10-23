@@ -1,0 +1,242 @@
+﻿# Hãy xem tài liệu trên wiki để biết cách chỉnh sửa file này.
+#-------------------------------
+[001]   # Intro
+Name = Intro
+#-------------------------------
+[002]   # Duong A7
+Name = Đường A7
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,7,1
+SnapEdges = true
+BattleBack = field
+MapSize = 4,1111000000000000
+Environment = Grass
+#-------------------------------
+[003]   # BacHai City
+Name = Thành phố Bắc Hải
+Outdoor = true
+ShowArea = true
+Bicycle = true
+HealingSpot = 2,8,8
+MapPosition = 0,11,1
+SnapEdges = true
+BattleBack = city
+MapSize = 2,1111
+Environment = None
+#-------------------------------
+[004]   # VanUyen Academy
+Name = Học viện Văn Uyển
+ShowArea = true
+MapPosition = 0,1,10
+BattleBack = indoor1
+Environment = None
+#-------------------------------
+[005]   # Vuon sau nha
+Name = Vườn Sau Nhà
+Outdoor = true
+ShowArea = true
+MapPosition = 0,5,18
+SnapEdges = true
+BattleBack = field
+#-------------------------------
+[008]   # Hang Mach Ngam
+Name = Hang Mạch Ngầm
+ShowArea = true
+MapPosition = 0,2,9
+SnapEdges = true
+BattleBack = cave
+Environment = Cave
+#-------------------------------
+[009]   # Nha
+Name = Nha
+SnapEdges = true
+BattleBack = indoor2
+Environment = None
+#-------------------------------
+[022]   # KhaiNguyen Town
+Name = Thị trấn Khải Nguyên
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,5,18
+SnapEdges = true
+BattleBack = town
+Environment = None
+#-------------------------------
+[042]   # Duong A1
+Name = Đường A1
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,5,16
+SnapEdges = true
+BattleBack = field
+MapSize = 2,1010
+Environment = Grass
+#-------------------------------
+[043]   # Lab MinhAnh
+Name = Viện Khải Nguyên
+ShowArea = true
+BattleBack = indoor1
+Environment = None
+#-------------------------------
+[048]   # VanHoi City
+Name = Thành phố Vạn Hội
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,5,14
+SnapEdges = true
+BattleBack = city
+MapSize = 2,1111
+Environment = None
+#-------------------------------
+[076]   # VanHoi PokeCenter
+Name = PokeCenter Vạn hội
+BattleBack = indoor1
+#-------------------------------
+[079]   # Duong A10
+Name = Đường A10
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,7,14
+SnapEdges = true
+BattleBack = beach
+#-------------------------------
+[081]   # Duong A2
+Name = Đường A2
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,2,14
+SnapEdges = true
+BattleBack = field
+MapSize = 3,111000000
+Environment = Grass
+#-------------------------------
+[082]   # Duong A3
+Name = Đường A3
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,1,13
+SnapEdges = true
+BattleBack = field
+MapSize = 2,1010
+#-------------------------------
+[083]   # BachTrung Forest
+Name = Rừng Bách Trùng
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,1,12
+BattleBack = forest
+Environment = Forest
+#-------------------------------
+[084]   # VanUyen City
+Name = Thành phố Văn Uyển
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,1,10
+SnapEdges = true
+BattleBack = city
+MapSize = 2,1010
+Environment = None
+#-------------------------------
+[085]   # Duong A4
+Name = Đường A4
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,1,9
+SnapEdges = true
+BattleBack = field
+#-------------------------------
+[086]   # Duong A5
+Name = Đường A5
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,1,7
+SnapEdges = true
+BattleBack = farm
+MapSize = 2,1010
+Environment = Grass
+#-------------------------------
+[087]   # ThanhVu Town
+Name = Thị trấn Thanh Vũ
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Rain,40
+MapPosition = 0,1,6
+SnapEdges = true
+BattleBack = town
+Environment = Puddle
+#-------------------------------
+[088]   # UTrach Smash
+Name = Đầm lầy U Trạch
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = HeavyRain,100
+MapPosition = 0,2,6
+SnapEdges = true
+BattleBack = forest
+MapSize = 3,111000000
+Environment = TallGrass
+#-------------------------------
+[089]   # LacHoa City
+Name = Thành Phố Lạc Hoa
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,5,6
+SnapEdges = true
+BattleBack = city
+MapSize = 2,1100
+Environment = Grass
+#-------------------------------
+[092]   # LacHoa PokeCenter
+Name = Lạc Hoa PokeCenter
+BattleBack = indoor1
+#-------------------------------
+[097]   # Duong A6
+Name = Đường A6
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,6,2
+SnapEdges = true
+BattleBack = field
+MapSize = 4,1000100010001000
+Environment = Forest
+#-------------------------------
+[105]   # Dai truyen hinh
+Name = Đài phát thanh Vạn Hội
+BattleBack = indoor1
+#-------------------------------
+[107]   # VanUyen PokeCenter
+Name = PokéCenter Văn Uyển
+BattleBack = indoor1
+#-------------------------------
+[109]   # VanUyen Gym
+Name = Đạo quán Văn Uyển
+BattleBack = forest
+#-------------------------------
+[110]   # ThanhVu PokeCenter
+Name = PokéCenter Thiên Du
+BattleBack = indoor1
+#-------------------------------
+[113]   # ThienDu Town
+Name = Thị trấn Thiên Du
+Outdoor = true
+ShowArea = true
+Bicycle = true
+MapPosition = 0,6,1
+SnapEdges = true
+BattleBack = town

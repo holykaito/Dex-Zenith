@@ -1,0 +1,816 @@
+#-------------------------------
+[HYPNOTICNOTE]
+Name = Hypnotic Note
+Type = PSYCHIC
+Category = Status
+Power = 0
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+Priority = -3
+FunctionCode = SleepIfUserDamaged
+Flags = CanProtect,CanMirrorMove,ZPower_SPECIAL_ATTACK_1
+Description = Puts the opponent to sleep if the user takes damage during that turn.
+#-------------------------------
+[COTTONKICK]
+Name = Cotton Kick
+Type = FAIRY
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetSpeed1
+Flags = CanProtect,CanMirrorMove,Kick
+EffectChance = 100
+Description = It reduces hit Pokémon's Speed.
+#-------------------------------
+[WINDBOARDING]
+Name = Wind Boarding
+Type = DARK
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = AnchorStrike
+Flags = CanProtect,CanMirrorMove
+Description = Increases power if Trap move has been used before and raises Attack and Defense.
+#-------------------------------
+[SHIELDBASH]
+Name = Shield Bash
+Type = STEEL
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = UseUserDefenseInsteadOfUserAttack
+Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
+Description = The user slams its body into the target. Deals more damage with a higher Defense stat.
+#-------------------------------
+[CURSEDTERRAIN]
+Name = Cursed Terrain
+Type = GHOST
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = UserSide
+FunctionCode = StartCursedTerrain
+Flags = CanMirrorMove
+Description = The user turns the battlefield into cursed terrain for five turns.
+#-------------------------------
+[RELICDANCE]
+Name = Relic Dance
+Type = NORMAL
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 10
+Target = AllNearFoes
+FunctionCode = SleepTargetChangeUserMeloettaForm
+Flags = CanProtect,CanMirrorMove,Sound,CannotMetronome,Kick,Dance
+EffectChance = 20
+Description = An ancient song appeals to the hearts of those listening. It may also induce sleep.
+#-------------------------------
+[SOVEREIGNSLIDE]
+Name = Sovereign Slide
+Type = WATER
+Category = Physical
+Power = 40
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+Priority = 3
+FunctionCode = LowerTargetSpeed1FlinchTargetIfUserFirstTurn
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 100
+Description = Lowers Speed. Flinches on the user's first turn.
+Animation = SACREDSWORD,BRINE
+#-------------------------------
+[FRAGMENTATION]
+Name = Fragmentation
+Type = STEEL
+Category = Special
+Power = 110
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = UserLosesEighthOfTotalHP
+Flags = CanProtect
+Description = Fires body shards. The user loses 1/4 of its max HP.
+Animation = SPIKECANNON,FLASH
+#-------------------------------
+[FERTILEFANGS]
+Name = Fertile Fangs
+Type = GRASS
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+Priority = 0
+FunctionCode = DamageTargetAddGrassType
+Flags = Contact,CanProtect,CanMirrorMove,Biting
+Description = Bites the target with grass-infused fangs.
+Animation = SUPERFANG,INGRAIN@Target
+#-------------------------------
+[SEISMICSLAM]
+Name = Seismic Slam
+Type = GROUND
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+Priority = 0
+FunctionCode = RecoilThirdOfDamageDealt
+Flags = Contact,CanProtect,CanMirrorMove
+Description = A powerful slam that also hurts the user.
+Animation = FISSURE,BODYSLAM
+#-------------------------------
+[FIGHTFOREVER]
+Name = Fight Forever
+Type = FIGHTING
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = User
+Priority = 4
+FunctionCode = UserEnduresFaintingThisTurnRaiseUserAtk2IfActivates
+Description = Endures with 1 HP, then sharply raises Attack. Fails in succession.
+Animation = ENDURE,BIDE
+#-------------------------------
+[WHIRLWINDKICK]
+Name = Whirlwind Kick
+Type = FIGHTING
+Category = Physical
+Power = 95
+Accuracy = 100
+TotalPP = 10
+Target = AllNearOthers
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove,Kick
+Description = A spinning kick that hits all nearby Pokemon.
+Animation = ROLLINGKICK,WHIRLWIND
+#-------------------------------
+[LOVELYBITE]
+Name = Lovely Bite
+Type = FAIRY
+Category = Physical
+Power = 85
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = AttractTargetContactBite
+Flags = Contact,CanProtect,CanMirrorMove,Biting
+EffectChance = 10
+Description = A loving bite that may infatuate the target.
+Animation = CHARM@Target,BITE
+#-------------------------------
+[FRANTICFANG]
+Name = Frantic Fang
+Type = NORMAL
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = DoubleDamageUserBelowHalf
+Flags = Contact,CanProtect,CanMirrorMove,Biting
+Description = Doubles in power if the user's HP is below half.
+Animation = HYPERFANG,LOCKON
+#-------------------------------
+[COTTONPUNCH]
+Name = Cotton Punch
+Type = GRASS
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetSpeed1SeedTarget
+Flags = Contact,CanProtect,CanMirrorMove,Punching
+EffectChance = 100
+Description = A cotton punch that lowers Speed and plants a seed.
+Animation = MEGAPUNCH,COTTONSPORE
+#-------------------------------
+[FAIRYSPHERES]
+Name = Fairy Spheres
+Type = FAIRY
+Category = Special
+Power = 25
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+Priority = 0
+FunctionCode = HitTwoToFiveTimes
+Flags = CanProtect,CanMirrorMove,Pulse
+Description = Magical spheres strike the target 2 to 5 times.
+Animation = AURASPHERE,FAIRYWIND
+#-------------------------------
+[SYLPHSPELL]
+Name = Sylph Spell
+Type = FAIRY
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = RaiseUserSpAtkSpdAcc1
+Flags = CanSnatch,Wind
+Description = A mystical wind raises Sp. Atk, Speed, and accuracy.
+Animation = QUIVERDANCE,FAIRYWIND
+#-------------------------------
+[SMITE]
+Name = Smite
+Type = ELECTRIC
+Category = Physical
+Power = 120
+Accuracy = 80
+TotalPP = 10
+Target = NearOther
+Priority = 0
+FunctionCode = HitsTargetInSkyGroundsTargetParalyzeTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 20
+Description = Strikes from above, grounding the target. May paralyze.
+Animation = THUNDER,SMACKDOWN
+#-------------------------------
+[STARCRASH]
+Name = Star Crash
+Type = FAIRY
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+Priority = 0
+FunctionCode = RecoilThirdOfDamageDealt
+Flags = Contact,CanProtect,CanMirrorMove
+Description = Crashes into the target like a star. Also hurts the user.
+Animation = TAKEDOWN,SWIFT
+#-------------------------------
+[STORMDRIVE]
+Name = Storm Drive
+Type = ELECTRIC
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = TwoTurnAttackOneTurnInRainstorm
+Flags = CanProtect,CanMirrorMove
+Description = Charges first, then attacks. Strikes immediately in rain.
+#-------------------------------
+[DRAGONCURRENT]
+Name = Dragon Current
+Type = WATER
+Category = Physical
+Power = 120
+Accuracy = 85
+TotalPP = 5
+Target = NearOther
+FunctionCode = TwoTurnAttackInvulnerableUnderwater
+Flags = Contact,CanProtect,CanMirrorMove
+Description = Dives first, then strikes and traps the target for 2-5 turns.
+#-------------------------------
+[AQUAFANG]
+Name = Aqua Fang
+Type = WATER
+Category = Physical
+Power = 65
+Accuracy = 95
+TotalPP = 15
+Target = NearOther
+FunctionCode = LowerTargetDefense1
+Flags = Contact,CanProtect,CanMirrorMove,Biting
+EffectChance = 10
+Description = A watery bite that may lower the target's Defense.
+Animation = SUPERFANG,WATERSPORT@Target
+#-------------------------------
+[MYSTICDANCE]
+Name = Mystic Dance
+Type = DRAGON
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = User
+FunctionCode = RaiseUserSpAtkSpd1
+Flags = CanSnatch,Dance
+Description = A mystic dance that raises Sp. Atk and Speed.
+#-------------------------------
+[FISHHARPOON]
+Name = Fish Harpoon
+Type = WATER
+Category = Physical
+Power = 85
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = SuperEffectiveAgainstWaterIgnoreDefenseStages
+Flags = Contact,CanProtect,CanMirrorMove,Horn
+Description = Pierces Defense stat changes. Super effective on Water types.
+Animation = HORNATTACK,AQUAJET
+#-------------------------------
+[HONEHORNS]
+Name = Hone Horns
+Type = DARK
+Category = Status
+Accuracy = 0
+TotalPP = 15
+Target = User
+FunctionCode = RaiseUserAtk1CriticalHitRate1
+Flags = CanSnatch,Horn
+Description = Sharpens its horns, raising Attack and critical-hit ratio.
+Animation = HONECLAWS,FOCUSENERGY
+#-------------------------------
+[RIDERKICK]
+Name = Rider Kick
+Type = BUG
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+Priority = 0
+FunctionCode = IgnoreTargetAbility
+Flags = Contact,CanProtect,CanMirrorMove,Kick
+Description = A powerful kick that ignores the target's Ability.
+#-------------------------------
+[SKYKICK]
+Name = Sky Kick
+Type = FLYING
+Category = Physical
+Power = 90
+Accuracy = 95
+TotalPP = 10
+Target = NearOther
+Priority = 0
+FunctionCode = CrashDamageFirstTurnBoostSkyKick
+Flags = Contact,CanProtect,CanMirrorMove,Kick
+Description = Stronger and faster on the user's first turn. Hurts if it misses.
+#-------------------------------
+[PUNISHINGKICK]
+Name = Punishing Kick
+Type = DARK
+Category = Physical
+Power = 1
+Accuracy = 95
+TotalPP = 10
+Target = NearOther
+FunctionCode = PowerLowerWithUserHPCrashIfMiss
+Flags = Contact,CanProtect,CanMirrorMove,Kick
+Description = Stronger at low HP. The user crashes if it misses.
+Animation = HIGHJUMPKICK,PAYBACK
+#-------------------------------
+[MOONYNIGHT]
+Name = Moony Night
+Type = DARK
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = User
+Priority = 0
+FunctionCode = StartGloomMoonlightWeather
+Description = Calls gloomy moonlight for five turns, powering up Dark moves.
+#-------------------------------
+[SHADOWFANGS]
+Name = Shadow Fangs
+Type = GHOST
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = DamageTargetMayCurse
+Flags = Contact,CanProtect,CanMirrorMove,Biting
+EffectChance = 10
+Description = Shadowy fangs bite the target and may leave it cursed.
+#-------------------------------
+[SOILDRAIN]
+Name = Soil Drain
+Type = GROUND
+Category = Special
+Power = 75
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+Priority = 0
+FunctionCode = HealUserByHalfOfDamageDone
+Flags = CanProtect,CanMirrorMove
+Description = Drains half the damage dealt as HP.
+Animation = GIGADRAIN,EARTHPOWER
+#-------------------------------
+[UNDERTOW]
+Name = Undertow
+Type = STEEL
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+Priority = 0
+FunctionCode = LowerTargetDefenseOrSpeed1
+Flags = Contact,CanProtect,CanMirrorMove,Slicing
+EffectChance = 30
+Description = Slashes with claws. May lower Defense or Speed.
+Animation = METALCLAW
+#-------------------------------
+[RECKLESSSWING]
+Name = Reckless Swing
+Type = DARK
+Category = Physical
+Power = 150
+Accuracy = 90
+TotalPP = 5
+Target = NearOther
+Priority = 0
+FunctionCode = RecoilHalfOfDamageDealt
+Flags = Contact,CanProtect,CanMirrorMove
+Description = A reckless strike with heavy recoil.
+Animation = BRUTALSWING
+#-------------------------------
+[TOUGHITOUT]
+Name = Tough It Out
+Type = FIGHTING
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = User
+Priority = 4
+FunctionCode = ProtectUserRaiseSpeed1
+Flags = CanSnatch
+Description = Protects the user and raises its Speed.
+Animation = PROTECT
+#-------------------------------
+[GEMMISSILE]
+Name = Gem Missile
+Type = ROCK
+Category = Special
+Power = 40
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+Priority = 1
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove
+Description = Fires a sharp gem to strike first.
+Animation = POWERGEM,SWIFT
+#-------------------------------
+[SANDYTERRAIN]
+Name = Sandy Terrain
+Type = GROUND
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = StartSandyTerrain
+Flags = CanSnatch
+Description = Boosts grounded Ground moves and lowers the evasiveness of Pokemon that are neither Ground nor Rock for five turns.
+#-------------------------------
+[SWAMPTERRAIN]
+Name = Swamp Terrain
+Type = WATER
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = StartSwampTerrain
+Flags = CanSnatch
+Description = Boosts grounded Water and mud moves and slows grounded Pokemon that are not Water-type for five turns.
+#-------------------------------
+[TOXICTERRAIN]
+Name = Toxic Terrain
+Type = POISON
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = StartToxicTerrain
+Flags = CanSnatch
+Description = Boosts grounded Poison and mud moves. Grounded non-Poison Pokemon cannot eat Berries and may be poisoned each turn.
+#-------------------------------
+[DRACONICTERRAIN]
+Name = Draconic Terrain
+Type = DRAGON
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = StartDraconicTerrain
+Flags = CanSnatch
+Description = Halves Fairy damage to grounded Pokemon. Dragon moves from grounded Pokemon can hit Fairy types for five turns.
+#-------------------------------
+[COLOSSEUMTERRAIN]
+Name = Colosseum Terrain
+Type = FIGHTING
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = StartColosseumTerrain
+Flags = CanSnatch
+Description = Boosts grounded Fighting moves and prevents all Pokemon from using status moves for five turns.
+#-------------------------------
+[POLLINATIONTERRAIN]
+Name = Pollination Terrain
+Type = BUG
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = StartPollinationTerrain
+Flags = CanSnatch
+Description = Boosts grounded Bug moves. Ignores Bug types' negative stat stages and positive stages of Pokemon that are neither Bug nor Grass.
+#-------------------------------
+[RAVINETERRAIN]
+Name = Ravine Terrain
+Type = FLYING
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = StartRavineTerrain
+Flags = CanSnatch
+Description = For five turns, boosts airborne Flying moves, weakens supereffective hits on airborne Flying types, and prevents powder moves.
+#-------------------------------
+[RIPANDTEAR]
+Name = Rip and Tear
+Type = DARK
+Category = Physical
+Power = 110
+Accuracy = 90
+TotalPP = 5
+Target = NearOther
+Priority = 0
+FunctionCode = LowerUserSpeed1BleedTarget
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 100
+Description = Slows the user and may cause bleeding.
+#-------------------------------
+[NIGHTFELLING]
+Name = Nightfelling
+Type = DARK
+Category = Physical
+Power = 120
+Accuracy = 70
+TotalPP = 10
+Target = NearOther
+FunctionCode = AlwaysHitsInGloomMoonlight
+Flags = CanProtect
+Description = Never misses in Gloom Moonlight.
+Animation = NIGHTSLASH
+#-------------------------------
+[DEEPBREATHING]
+Name = Deep Breathing
+Type = FIGHTING
+Category = Status
+Accuracy = 0
+TotalPP = 15
+Target = User
+FunctionCode = RaiseUserSpeed1CriticalHitRate1
+Flags = CanSnatch
+Description = Raises Speed and critical-hit ratio.
+Animation = BULKUP,FOCUSENERGY
+#-------------------------------
+[PHOTONEDGE]
+Name = Photon Edge
+Type = ELECTRIC
+Category = Physical
+Power = 85
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate,Slicing
+Description = Slashes with light. Critical hits land more easily.
+Animation = PSYCHOCUT
+#-------------------------------
+[BACKSTAB]
+Name = Back Stab
+Type = DARK
+Category = Physical
+Power = 40
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+Priority = 3
+FunctionCode = FlinchTargetFailsUnlessFirstTurnOrVanished
+Flags = Contact,CanProtect,CanMirrorMove,Slicing
+EffectChance = 100
+Description = Flinches the target. Only works first turn or while vanished.
+Animation = NIGHTSLASH
+#-------------------------------
+[LURK]
+Name = Lurk
+Type = DARK
+Category = Physical
+Power = 100
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = TwoTurnAttackInvulnerableRemoveProtections
+Flags = Contact,CanMirrorMove
+Description = The user hides stealthily, then strikes on the next turn. Hits through protections.
+Animation = SHADOWFORCE
+#-------------------------------
+[PIXIESLASH]
+Name = Pixie Slash
+Type = FAIRY
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+Priority = 0
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove,HighCriticalHitRate,Slicing
+Description = Slashes with a whimsical blade. High critical-hit ratio.
+Animation = PSYCHOCUT,FAIRYWIND
+#-------------------------------
+[PSYSHIELD]
+Name = Psyshield
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = User
+Priority = 0
+FunctionCode = GiveUserShield
+Flags = CanSnatch,ShieldPercent_50
+Description = Creates a shield worth half the user's max HP.
+Animation = BARRIER,REFLECT
+#-------------------------------
+[WITCHCRAFT]
+Name = Witchcraft
+Type = FAIRY
+Category = Status
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+Priority = 0
+FunctionCode = SetTargetTypeDragonLowerTargetAttack2
+Flags = CanProtect,CanMirrorMove
+Description = Turns the target into a Dragon type and sharply lowers Attack.
+Animation = DRAGONBREATH,CHARM
+#-------------------------------
+[BLADEMASTERCOUNTER]
+Name = Swift Slash
+Type = NORMAL
+Category = Physical
+Power = 25
+Accuracy = 100
+TotalPP = 1
+Target = NearOther
+FunctionCode = BlademasterCounter
+Flags = Contact,CanProtect,Slicing
+Description = A swift slash delivered as a counterattack.
+#-------------------------------
+[MOONFALL]
+Name = Moonfall
+Type = FAIRY
+Category = Physical
+Power = 180
+Accuracy = 80
+TotalPP = 5
+Target = AllBattlers
+Priority = 0
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove,Cosmic
+Description = Drops the moon on all battlers, including the user.
+Animation = MOONBLAST,DRACOMETEOR
+#-------------------------------
+[FAECORE]
+Name = Fae Core
+Type = FAIRY
+Category = Special
+Power = 140
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+Priority = 0
+FunctionCode = TwoTurnAttackTrapTargetFaeCore
+Flags = CanProtect,CanMirrorMove
+Description = Traps the target, then explodes on the next turn.
+Animation = FAIRYLOCK,MOONBLAST
+#-------------------------------
+[ESPERWALTZ]
+Name = Esper Waltz
+Type = PSYCHIC
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+Priority = 0
+FunctionCode = RaiseUserSpAtk1
+Flags = CanProtect,CanMirrorMove,Dance
+EffectChance = 50
+Description = A psychic dance that may raise the user's Sp. Atk.
+Animation = QUIVERDANCE,PSYCHIC@User
+#-------------------------------
+[NECTARSIPHON]
+Name = Nectar Siphon
+Type = BUG
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+Priority = 0
+FunctionCode = HealUserByHalfOfDamageDone
+Flags = CanProtect,CanMirrorMove
+Description = Drains half the damage dealt as HP.
+Animation = GIGADRAIN,POLLENPUFF
+#-------------------------------
+[CLAYDART]
+Name = Clay Dart
+Type = GROUND
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+Priority = 0
+FunctionCode = SuperEffectiveAgainstFlying
+Flags = CanProtect,CanMirrorMove,Arrow
+Description = Fires a clay dart. Super effective against Flying types.
+Animation = THOUSANDARROWS,ROCKBLAST
+#-------------------------------
+[MOUNTAINCHUNK]
+Name = Mountain Chunk
+Type = GROUND
+Category = Physical
+Power = 110
+Accuracy = 85
+TotalPP = 5
+Target = NearOther
+Priority = 0
+FunctionCode = FlinchTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 30
+Description = Hurls a mountain chunk. May cause flinching.
+Animation = ROCKWRECKER
+#-------------------------------
+[VENOMENVY]
+Name = Venom Envy
+Type = POISON
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 15
+Target = AllNearFoes
+FunctionCode = PoisonTargetIfTargetHasRaisedStats
+Flags = CanProtect
+EffectChance = 100
+Description = Attacks with energy from jealousy. All opposing Pokémon with stat boosts get poisoned.
+#-------------------------------
+[SEVEREPOISON]
+Name = Severe Poison
+Type = POISON
+Category = Status
+Power = 0
+Accuracy = 85
+TotalPP = 10
+Target = NearOther
+FunctionCode = BadPoisonTargetFasterIgnoreTargetAbility
+Flags = CanProtect,CanMirrorMove
+Description = Badly poisons the target, ignoring its Ability. Poison damage rises twice as fast.
+#-------------------------------
+[NEUROTOXIN]
+Name = Neurotoxin
+Type = POISON
+Category = Physical
+Power = 50
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = DisableTargetPsychicMoves
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = Stings the target, preventing Psychic-type moves for two more turns.
+#-------------------------------
+[DUSTSTORM]
+Name = Dust Storm
+Type = GROUND
+Category = Special
+Power = 120
+Accuracy = 80
+TotalPP = 5
+Target = AllNearFoes
+FunctionCode = LowerTargetAccuracy1
+Flags = CanProtect,Wind
+EffectChance = 20
+Description = A fierce dust storm that may lower opposing Pokémon's accuracy.
+#-------------------------------
+[WYRMWIND]
+Name = Wyrm Wind
+Type = DRAGON
+Category = Special
+Power = 25
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = HitTwoToFiveTimes
+Flags = CanProtect,CanMirrorMove,Wind
+Description = Blasts the target with draconic winds two to five times.
