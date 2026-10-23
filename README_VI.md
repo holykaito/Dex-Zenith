@@ -100,3 +100,7 @@ Khi cập nhật game thủ công, thay cả AAM_Settings.rb nếu cấu hình m
 - Bỏ đường gạch dọc ở nhánh tiến hóa; giữ điều kiện và mũi tên riêng từng nhánh.
 - Pop-up Move thêm tỉ lệ hiệu ứng phụ từ EffectChance trong PBS (mặc định 0% khi không khai báo).
 - Pokémon học Move chia thành Học qua level và Học qua TM/HM/Tutor, có bộ tìm kiếm riêng. Egg Moves giữ ở mục riêng khi có dữ liệu.
+
+## Bản cập nhật v6
+
+Bỏ nền theo hệ ở hai bảng TM/HM và Tutor trong pop-up Pokémon; giữ nhãn hệ, category và tooltip.

@@ -24,7 +24,7 @@ function splitTutorMoves(p){
 }
 function compatibleMoveTable(rows,machine=false){
  if(!rows.length)return `<p class="text-muted">${t('unavailable')}</p>`;
- return `<div class="table-scroll"><table class="detail-table compatible-moves"><thead><tr>${machine?th('TM / HM'):''}${th('Move')}${th(t('types'))}${th('Cat.')}${th('Pow')}${th('Acc')}${th('PP')}</tr></thead><tbody>${rows.map(row=>{const id=machine?row.Move:row,m=idx.moves[id];return `<tr style="--move-color:${colors[m?.Type]||'#899581'}">${machine?`<td class="machine-number">${esc(row.Name||row.id)}</td>`:''}<td>${link('moves',id,m?.Name)}</td><td>${m?badge(m.Type):'—'}</td><td>${categoryBadge(m?.Category)}</td><td>${esc(m?.Power||'—')}</td><td>${m?.Accuracy==='0'?'—':esc(m?.Accuracy||'—')}</td><td>${esc(m?.TotalPP||'—')}</td></tr>`;}).join('')}</tbody></table></div>`;
+ return `<div class="table-scroll"><table class="detail-table compatible-moves"><thead><tr>${machine?th('TM / HM'):''}${th('Move')}${th(t('types'))}${th('Cat.')}${th('Pow')}${th('Acc')}${th('PP')}</tr></thead><tbody>${rows.map(row=>{const id=machine?row.Move:row,m=idx.moves[id];return `<tr>${machine?`<td class="machine-number">${esc(row.Name||row.id)}</td>`:''}<td>${link('moves',id,m?.Name)}</td><td>${m?badge(m.Type):'—'}</td><td>${categoryBadge(m?.Category)}</td><td>${esc(m?.Power||'—')}</td><td>${m?.Accuracy==='0'?'—':esc(m?.Accuracy||'—')}</td><td>${esc(m?.TotalPP||'—')}</td></tr>`;}).join('')}</tbody></table></div>`;
 }
 function tutorTables(p){const {machines,tutor}=splitTutorMoves(p);return part('TM / HM',compatibleMoveTable(machines,true))+part('Tutor',compatibleMoveTable(tutor));}
 
