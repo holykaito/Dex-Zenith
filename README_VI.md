@@ -39,11 +39,11 @@ Mở http://localhost:8000. Không mở index.html trực tiếp bằng file://.
 
 ## Nội dung
 
-- Pokédex: 1.593 loài/form, stats, Ability, Hidden Ability, Innate, tiến hóa, learnset.
+- Pokédex: 1.559 loài/form, stats, Ability, Hidden Ability, Innate, tiến hóa, learnset.
 - Moves: 1.045; Abilities: 522; Items: 1.064; TM/HM/TR: 233; Encounters: 15 bảng khu vực.
 - Tìm kiếm, bộ lọc, sắp xếp, phân trang, liên kết giữa các mục.
 - Chuyển Việt/Anh cho cả giao diện và mô tả. Bản dịch lấy từ các thư mục Text_vietnamese_core, Text_vietnamese_game; mô tả chưa được dịch sẽ giữ tiếng Anh.
-- Ảnh Pokémon lấy từ repo công khai của game; PNG nhiều khung hiển thị khung đầu.
+- Ảnh Pokémon lấy từ repo công khai của game; PNG nhiều khung được chạy thành ảnh động; tự chuyển sang PNG nếu GIF không còn.
 
 ## Giới hạn dữ liệu
 
@@ -63,15 +63,28 @@ Dự án người hâm mộ, phi thương mại. Pokémon thuộc về các ch�
 ## Bản cập nhật giao diện v2
 
 Thanh điều hướng nằm ngang, tăng cỡ chữ, cột Innate và tooltip hiệu ứng cho Ability/Innate/Move.
-Cây tiến hóa hiển thị đầy đủ gia đình, nhánh và các form cùng sprite; các form xếp chung loài, không coi Mega là tiến hóa thường.
+Cây tiến hóa hiển thị từng form thành một nút riêng, cùng sprite và điều kiện ngay trên đường nối. Mega có nhãn riêng.
 Gộp TM/HM/Tutor trong pop-up. Danh sách TM/HM chỉ nhận Item có FieldUse TM/HM/TR; Z-Crystal vẫn nằm ở Items.
 Tên Pocket đối chiếu Settings.bag_pocket_names và ZCRYSTAL_BAG_POCKET_NAME.
 Ảnh Pokémon trên banner đổi ngẫu nhiên sau mỗi 5 giây khi trang đang được xem.
 Không hiển thị thông tin nguồn hay liên kết dữ liệu trong giao diện.
 
-Bản dịch đã khớp: 1.281/1.593 Pokémon/form, 1.040/1.045 Move, 512/522 Ability và 1.064/1.064 Item.
+Bản dịch đã khớp: 1.280/1.559 Pokémon/form, 1.040/1.045 Move, 512/522 Ability và 1.064/1.064 Item.
 Các mô tả mới chưa có bản dịch khớp được giữ tiếng Anh. Không dùng bản dịch cũ khi hiệu ứng tiếng Anh đã thay đổi.
 
 Để cập nhật website đã đăng: tải các nội dung trong ZIP lên đúng gốc repo hiện tại rồi Commit changes. Giữ Settings → Pages ở main → /docs.
 Chỉ muốn thay phần web: upload nguyên thư mục docs ở gốc repo (gồm data/vi.json mới). Không xóa thư mục docs trước khi upload.
 Nếu trang còn hiển thị bản cũ sau khi Pages hoàn tất: nhấn Ctrl+F5.
+
+## Bản cập nhật v3
+
+- Ability và Innate dùng cùng kiểu chữ; mỗi Ability một dòng, Hidden Ability có (H).
+- Mức mở Innate riêng từng loài lấy từ AAM_Settings.rb và hiện trong ngoặc. Loài không có cấu hình riêng không thêm số.
+- TM/HM/Tutor có số máy nếu có, màu nền theo hệ chiêu thức.
+- Physical/Special/Status dùng nền đỏ/tím/xám.
+- Loại 34 form Gigantamax khỏi Pokédex.
+- Sprite sheet được chạy theo từng khung; dừng khi ngoài màn hình để giảm tải.
+- Pokémon ngẫu nhiên trên banner mở được pop-up khi bấm.
+- Wild Encounter không hiện số map trước tên khu vực.
+
+Khi cập nhật game thủ công, thay cả AAM_Settings.rb nếu cấu hình mở Innate thay đổi.

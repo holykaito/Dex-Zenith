@@ -24,3 +24,10 @@ machines=[x for x in D['items'] if x.get('Move') and x.get('FieldUse') in ['TM',
 assert len(machines)==233 and not any('ZCrystal' in x.get('Flags','') for x in machines), 'Machine classification'
 assert V['pockets']['vi']['2']=='Thuốc' and V['pockets']['en']['9']=='Z-Crystals'
 print('Verified: Vietnamese descriptions, unmatched translation fallback, machine classification, pocket names.')
+
+assert D['innateUnlocks']['PIDGEOT']==[1,15,50], 'Species unlock levels'
+assert D['innateUnlocks']['TOXICROAK']==[1,25,60], 'Species unlock levels'
+assert all(not x.get('GmaxMove') and 'gigantamax' not in x.get('FormName','').lower() for x in D['pokemon']), 'Exclude Gigantamax'
+assert D['sprites']['GROTLE']=='GROTLE.png' and D['sprites']['GLAMEOW']=='GLAMEOW.png', 'PNG fallback inventory'
+assert 'GROTLE.png' in D['spriteFiles'] and 'GLAMEOW.png' in D['spriteFiles']
+print('Verified: explicit Innate levels, Gigantamax exclusion, current PNG sprite inventory.')

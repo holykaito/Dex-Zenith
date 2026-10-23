@@ -27,4 +27,5 @@ def download_translation(pair):
     target.write_bytes(fetch('https://raw.githubusercontent.com/holykaito/Pokemon-Lightest-Platinum-v2024/main/'+folder+'/'+name))
 with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
     list(pool.map(download_translation,[(folder,name) for folder in ['Text_vietnamese_core','Text_vietnamese_game'] for name in translation_names]))
+(ROOT/'AAM_Settings.rb').write_bytes(fetch('https://raw.githubusercontent.com/holykaito/Pokemon-Lightest-Platinum-v2024/main/Plugins/Innate%20Abilities/AAM%20Settings.rb'))
 print('Refresh complete. Run: python build_data.py')

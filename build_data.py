@@ -65,7 +65,20 @@ sprites={}
 for filename in json.loads((ROOT/'sprites.json').read_text()):
     f=pathlib.Path(filename)
     if f.suffix.lower() in ['.png','.gif']:sprites.setdefault(f.stem,filename)
+# Prefer PNG when both formats exist; retain a complete inventory for fallbacks.
+for filename in json.loads((ROOT/'sprites.json').read_text()):
+    f=pathlib.Path(filename)
+    if f.suffix.lower()=='.png':sprites[f.stem]=filename
 D['sprites']=sprites
+D['spriteFiles']=json.loads((ROOT/'sprites.json').read_text())
+settings=(ROOT/'AAM_Settings.rb').read_text(encoding='utf8')
+active=bool(re.search(r'^\s*INNATE_PROGRESS_WITH_LEVEL\s*=\s*true',settings,re.M)) and not bool(re.search(r'^\s*INNATE_PROGRESS_WITH_VARIABLE\s*=\s*true',settings,re.M))
+# Only explicit species rules get a suffix; the global [1,1,1] adds no annotation.
+block=settings.split('LEVELS_TO_UNLOCK =',1)[1].split('INNATE_RANDOMIZER',1)[0]
+D['innateUnlocks']={key:[int(x) for x in re.findall(r'\d+',levels)] for key,levels in re.findall(r'\[:([A-Z0-9_]+),([^\]]+)\]',block)} if active else {}
+# Gigantamax forms are intentionally omitted from the public guide.
+D['pokemon']=[p for p in D['pokemon'] if not (p.get('GmaxMove') or 'gigantamax' in p.get('FormName','').lower())]
+
 # Combine paired translations: game-specific translations override core only when translated.
 import unicodedata
 def keytext(value):
