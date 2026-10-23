@@ -88,3 +88,15 @@ Nếu trang còn hiển thị bản cũ sau khi Pages hoàn tất: nhấn Ctrl+F
 - Wild Encounter không hiện số map trước tên khu vực.
 
 Khi cập nhật game thủ công, thay cả AAM_Settings.rb nếu cấu hình mở Innate thay đổi.
+
+## Bản cập nhật v4
+
+- Pop-up chia hai bảng TM/HM (theo số máy, TM trước HM) và Tutor (theo alphabet tên Move). Chiêu có máy chỉ xuất hiện trong bảng TM/HM.
+- Giữ tooltip, màu hệ và thông số chiêu thức trong cả hai bảng.
+- Thanh stat đổi màu theo điểm: 1–29 đỏ, 30–59 cam, 60–89 vàng, 90–119 xanh lục nhạt, 120–149 xanh lục đậm, 150–179 xanh dương đậm, từ 180 tím đậm.
+
+## Bản cập nhật v5
+
+- Bỏ đường gạch dọc ở nhánh tiến hóa; giữ điều kiện và mũi tên riêng từng nhánh.
+- Pop-up Move thêm tỉ lệ hiệu ứng phụ từ EffectChance trong PBS (mặc định 0% khi không khai báo).
+- Pokémon học Move chia thành Học qua level và Học qua TM/HM/Tutor, có bộ tìm kiếm riêng. Egg Moves giữ ở mục riêng khi có dữ liệu.
