@@ -14,3 +14,13 @@ for a in D['encounters']:
   assert all(s['pokemon'] in p for s in method['slots']), 'Encounter links'
 assert len(D['sprites'])>1500
 print('Verified: stat order, form inheritance, innates, evolution moves, TM links, encounters, sprite index.')
+
+V=json.loads((pathlib.Path(__file__).parent/'docs/data/vi.json').read_text())
+assert V['pokemon']['BULBASAUR'].startswith('Có thể thấy Bulbasaur'), 'Dex Vietnamese translation'
+assert V['abilities']['OVERGROW']=='Tăng sức mạnh chiêu hệ Cỏ khi HP xuống thấp.', 'Ability translation'
+assert '20 HP' in V['items']['POTION'], 'Item translation'
+assert 'DUSTSTORM' not in V['moves'], 'No substitution of outdated translations'
+machines=[x for x in D['items'] if x.get('Move') and x.get('FieldUse') in ['TM','HM','TR'] and 'ZCrystal' not in x.get('Flags','').split(',')]
+assert len(machines)==233 and not any('ZCrystal' in x.get('Flags','') for x in machines), 'Machine classification'
+assert V['pockets']['vi']['2']=='Thuốc' and V['pockets']['en']['9']=='Z-Crystals'
+print('Verified: Vietnamese descriptions, unmatched translation fallback, machine classification, pocket names.')

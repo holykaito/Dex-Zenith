@@ -20,4 +20,11 @@ folders=json.loads(fetch(API+'/contents/Graphics/Pokemon'))
 front=next(x for x in folders if x['name']=='Front')
 sprites=json.loads(fetch(front['git_url']))
 (ROOT/'sprites.json').write_text(json.dumps([x['path'] for x in sprites['tree']]))
+# Retrieve the existing Vietnamese translations without changing their wording.
+translation_names=['POKEDEX_ENTRIES.txt','ABILITY_DESCRIPTIONS.txt','MOVE_DESCRIPTIONS.txt','ITEM_DESCRIPTIONS.txt','SCRIPT_TEXTS.txt']
+def download_translation(pair):
+    folder,name=pair;target=ROOT/folder/name;target.parent.mkdir(exist_ok=True)
+    target.write_bytes(fetch('https://raw.githubusercontent.com/holykaito/Pokemon-Lightest-Platinum-v2024/main/'+folder+'/'+name))
+with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
+    list(pool.map(download_translation,[(folder,name) for folder in ['Text_vietnamese_core','Text_vietnamese_game'] for name in translation_names]))
 print('Refresh complete. Run: python build_data.py')

@@ -66,6 +66,44 @@ for filename in json.loads((ROOT/'sprites.json').read_text()):
     f=pathlib.Path(filename)
     if f.suffix.lower() in ['.png','.gif']:sprites.setdefault(f.stem,filename)
 D['sprites']=sprites
+# Combine paired translations: game-specific translations override core only when translated.
+import unicodedata
+def keytext(value):
+    return ' '.join(unicodedata.normalize('NFC',value).replace('’',"'").replace('‘',"'").split())
+def translation_pairs(path):
+    if not path.exists():return {}
+    lines=[];started=False
+    for line in path.read_text(encoding='utf-8-sig').splitlines():
+        if line.startswith('#'):continue
+        if line.startswith('[') and line.endswith(']'):
+            started=True;continue
+        if started:lines.append(line)
+    result={}
+    for i in range(0,len(lines)-1,2):
+        english,vietnamese=lines[i].strip(),lines[i+1].strip()
+        if english and vietnamese and keytext(english)!=keytext(vietnamese):result[keytext(english)]=vietnamese
+    return result
+coverage={}
+for group,filename,field in [('pokemon','POKEDEX_ENTRIES','Pokedex'),('moves','MOVE_DESCRIPTIONS','Description'),('abilities','ABILITY_DESCRIPTIONS','Description'),('items','ITEM_DESCRIPTIONS','Description')]:
+    translated={}
+    for folder in ['Text_vietnamese_core','Text_vietnamese_game']:
+        translated.update(translation_pairs(ROOT/folder/(filename+'.txt')))
+    count=0
+    for row in D[group]:
+        vi=translated.get(keytext(row.get(field,'')))
+        if vi:row[field+'Vi']=vi;count+=1
+    coverage[group]={'translated':count,'total':len(D[group])}
+D['translationCoverage']=coverage
+D['pockets']={'en':{'1':'Items','2':'Medicine','3':'Poké Balls','4':'TMs & HMs','5':'Berries','6':'Mail','7':'Battle Items','8':'Key Items','9':'Z-Crystals'},'vi':{'1':'Vật phẩm','2':'Thuốc','3':'Poké Balls','4':'TMs & HMs','5':'Berry','6':'Thư','7':'Vật phẩm chiến đấu','8':'Vật phẩm quan trọng','9':'Z-Crystal'}}
+print('Vietnamese descriptions',coverage)
+# Keep language data separate so changing translations does not rewrite the English dataset.
+vi={'pockets':D.pop('pockets'),'coverage':D.pop('translationCoverage')}
+for group,field in [('pokemon','Pokedex'),('moves','Description'),('abilities','Description'),('items','Description')]:
+    vi[group]={}
+    for row in D[group]:
+        value=row.pop(field+'Vi',None)
+        if value:vi[group][row['id']]=value
+(ROOT/'docs/data/vi.json').write_text(json.dumps(vi,ensure_ascii=False,separators=(',',':')),encoding='utf8')
 (ROOT/'docs/data/zenith.json').write_text(json.dumps(D,ensure_ascii=False,separators=(',',':')),encoding='utf8')
 print({k:len(v) for k,v in D.items() if isinstance(v,list)})
 print('Forms',sum('base' in x for x in species.values()))
