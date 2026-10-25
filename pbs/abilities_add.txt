@@ -93,7 +93,7 @@ Description = Creates Trick Room when entering battle.
 #-------------------------------
 [CHARGERUSH] ####
 Name = Charge Rush
-Description = Boosts Attack and Speed by 20% on its first turn.
+Description = Boosts Attack and Speed on its first turn.
 #-------------------------------
 [CHEAPTACTICS] ####
 Name = Cheap Tactics
@@ -162,6 +162,10 @@ Description = Super-effective moves hit true and crit more often.
 [FLORESCENCE] ###
 Name = Florescence
 Description = Gives Grass-type moves priority at high HP.
+#-------------------------------
+[FLUIDGUARD] ###
+Name = Fluid Guard
+Description = Takes less damage the faster it is than the attacker.
 #-------------------------------
 [FORTITUDE] ###
 Name = Fortitude
@@ -259,6 +263,10 @@ Description = Inhales wind-based moves to expand the body & boost defense.
 Name = Intoxicate
 Description = Normal-moves becomes Poison-moves and be boosted.
 #-------------------------------
+[JUMPSCARE] ###
+Name = Jumpscare
+Description = Uses Astonish upon entry.
+#-------------------------------
 [KAMENRIDER] ###
 Name = Kamen Rider
 Description = Powers up attacks after an ally falls.
@@ -331,6 +339,10 @@ Description = Guards against status and damage when HP is high.
 Name = Powder Burst
 Description = Gives powder moves +1 priority.
 #-------------------------------
+[PRETENTIOUS] ###
+Name = Pretentious
+Description = Knockouts raise its critical-hit ratio.
+#-------------------------------
 [PYROMANCY] ###
 Name = Pyromancy
 Description = Move inflicts burn x5 as often.
@@ -343,13 +355,17 @@ Description = May survive with 1 HP and attacks faster in a pinch.
 Name = Ninja Style
 Description = Sets extra Spikes or Toxic Spikes layers.
 #-------------------------------
+[NIGHTSTALKER] ###
+Name = Nightstalker
+Description = Gives Dark-type moves priority while above half HP.
+#-------------------------------
 [NIMBLEFIST]
 Name = Nimble Fist
 Description = Punching moves may gain priority.
 #-------------------------------
 [NOCTURNAL] ###
 Name = Nocturnal
-Description = Reduces damage from Fairy-type and Dark-type moves.
+Description = Dark moves gain STAB; faster in Gloom Moonlight.
 #-------------------------------
 [NUMBINGPOISON]
 Name = Numbing Poison
@@ -358,6 +374,10 @@ Description = Moves that inflict poison may paralyze instead.
 [OUTBREAK] ###
 Name = Outbreak
 Description = Spreads status and lowers Attack when inflicting status.
+#-------------------------------
+[PARANOID] ###
+Name = Paranoid
+Description = Doubles Sp. Def but takes double damage from Psychic-type moves.
 #-------------------------------
 [PRECISEFIST]
 Name = Precise Fist
@@ -391,6 +411,10 @@ Description = Heals and cures allies switching in.
 Name = Resilience
 Description = Recovers health gradually when seriously injured.
 #-------------------------------
+[REFRACTIVE] ###
+Name = Refractive
+Description = Boosts light moves and gains their type.
+#-------------------------------
 [RAGNAROK] ###
 Name = Ragnarok
 Description = Cures status and lowered stats when HP falls below half.
@@ -423,6 +447,10 @@ Description = Grass-type moves boost offenses while free of status.
 Name = Self-Sufficient
 Description = Restores HP each turn, healing more below half HP.
 #-------------------------------
+[SHATTERMARK] ###
+Name = Shatter Mark
+Description = Contact and Rock moves may inflict Splinter.
+#-------------------------------
 [SHOWDOWNMODE] ###
 Name = Showdown Mode
 Description = Enhance stats when in danger, but gradually weaken
@@ -437,7 +465,7 @@ Description = +1 all stats on KO
 #-------------------------------
 [SPEEDFORCE] ###
 Name = Speed Force
-Description = Use an additional Speed ​​to calculate damage.
+Description = Speed adds damage to contact moves.
 #-------------------------------
 [SPELLCASTER] ###
 Name = Spellcaster
@@ -494,6 +522,10 @@ Description = Clears entry hazards from its side when switches in.
 [TRAUMATICFIST] ###
 Name = Traumatic Fist
 Description = When hits with a punching move, lowers one of the target's stats.
+#-------------------------------
+[UMBRALGRIT] ###
+Name = Umbral Grit 
+Description = Takes less damage from non-Steel moves during Gloom Moonlight.
 #-------------------------------
 [VAMPIRIC] ###
 Name = Vampiric

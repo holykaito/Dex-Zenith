@@ -31,3 +31,6 @@ assert all(not x.get('GmaxMove') and 'gigantamax' not in x.get('FormName','').lo
 assert D['sprites']['GROTLE']=='GROTLE.png' and D['sprites']['GLAMEOW']=='GLAMEOW.png', 'PNG fallback inventory'
 assert 'GROTLE.png' in D['spriteFiles'] and 'GLAMEOW.png' in D['spriteFiles']
 print('Verified: explicit Innate levels, Gigantamax exclusion, current PNG sprite inventory.')
+
+assert all(x['bst']==sum(x['stats']) for x in D['pokemon']), 'BST matches six base stats'
+print('Verified: BST totals for every Pokémon/form.')

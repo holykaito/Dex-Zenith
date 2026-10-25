@@ -40,7 +40,7 @@ Mở http://localhost:8000. Không mở index.html trực tiếp bằng file://.
 ## Nội dung
 
 - Pokédex: 1.559 loài/form, stats, Ability, Hidden Ability, Innate, tiến hóa, learnset.
-- Moves: 1.045; Abilities: 522; Items: 1.064; TM/HM/TR: 233; Encounters: 15 bảng khu vực.
+- Moves: 1.051; Abilities: 530; Items: 1.064; TM/HM/TR: 233; Encounters: 15 bảng khu vực.
 - Tìm kiếm, bộ lọc, sắp xếp, phân trang, liên kết giữa các mục.
 - Chuyển Việt/Anh cho cả giao diện và mô tả. Bản dịch lấy từ các thư mục Text_vietnamese_core, Text_vietnamese_game; mô tả chưa được dịch sẽ giữ tiếng Anh.
 - Ảnh Pokémon lấy từ repo công khai của game; PNG nhiều khung được chạy thành ảnh động; tự chuyển sang PNG nếu GIF không còn.
@@ -104,3 +104,11 @@ Khi cập nhật game thủ công, thay cả AAM_Settings.rb nếu cấu hình m
 ## Bản cập nhật v6
 
 Bỏ nền theo hệ ở hai bảng TM/HM và Tutor trong pop-up Pokémon; giữ nhãn hệ, category và tooltip.
+
+## Bản cập nhật v7 — 25/10/2026
+
+- Thêm dòng BST vào ngay bảng Base stats trong pop-up Pokémon.
+- Mặc định 100 mục/trang; chọn 30, 50, 100 hoặc 200 ở cuối danh sách, lưu lựa chọn trên trình duyệt.
+- Dấu ✓ cạnh tên trong Pokédex khi Flags chứa chính xác Done. Form dùng Flags sau khi kế thừa/ghi đè theo PBS.
+
+Dữ liệu v7: 1.559 Pokémon/form, 1.051 Move, 530 Ability. PBS hiện chưa có flag Done. LAWLOCK đang được tham chiếu nhưng thiếu định nghĩa Move; giữ nguyên ID khi hiển thị.

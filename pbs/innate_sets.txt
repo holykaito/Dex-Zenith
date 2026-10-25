@@ -89,6 +89,12 @@ Innates = LEVITATE,INFLATABLE,MULTIHEADED
 [WEEZING_1]
 Innates = LEVITATE,INFLATABLE,MULTIHEADED
 #----------------------------------------
+[GOLDEEN]
+Innates = SWIFTSWIM,WATERVEIL
+#----------------------------------------
+[SEAKING]
+Innates = SWIFTSWIM,WATERVEIL,MIGHTYHORN
+#----------------------------------------
 [STARYU]
 Innates = NATURALCURE
 #----------------------------------------
@@ -157,6 +163,21 @@ Innates = RUNAWAY
 #----------------------------------------
 [MIGHTYENA]
 Innates = INTIMIDATE,STRONGJAW,SUBJUGATE
+#----------------------------------------
+[ZIGZAGOON]
+Innates = PICKUP
+#----------------------------------------
+[LINOONE]
+Innates = PICKUP,GLUTTONY,SPEEDFORCE
+#----------------------------------------
+[ZIGZAGOON_1]
+Innates = GUTS
+#----------------------------------------
+[LINOONE_1]
+Innates = GUTS,RECKLESS
+#----------------------------------------
+[OBSTAGOON]
+Innates = GUTS,RECKLESS,NIGHTSTALKER
 #----------------------------------------
 [RALTS]
 Innates = TELEPATHY
@@ -337,6 +358,15 @@ Innates = PRESSURE,TELEPATHY
 [GIRATINA_1]
 Innates = PRESSURE,TELEPATHY,LEVITATE
 #----------------------------------------
+[PIDOVE]
+Innates = SUPERLUCK
+#----------------------------------------
+[TRANQUILL]
+Innates = SUPERLUCK,KEENEYE
+#----------------------------------------
+[UNFEZANT]
+Innates = SUPERLUCK,KEENEYE,PRETENTIOUS
+#----------------------------------------
 [PURRLOIN]
 Innates = CATSLUCK,LIMBER
 #----------------------------------------
@@ -353,10 +383,10 @@ Innates = PICKUP,SCRAPPY,OVERCOAT
 Innates = PICKUP,SCRAPPY,OVERCOAT
 #----------------------------------------
 [PATRAT]
-Innates = RUNAWAY,KEENEYE
+Innates = KEENEYE,GROWINGTOOTH
 #----------------------------------------
 [WATCHOG]
-Innates = RUNAWAY,KEENEYE
+Innates = KEENEYE,GROWINGTOOTH,PARANOID
 #----------------------------------------
 [MUNNA]
 Innates = LEVITATE,TELEPATHY
@@ -582,6 +612,15 @@ Innates = IRONFIST,SCRAPPY,ANGERPOINT
 #----------------------------------------
 [YVELTAL]
 Innates = IRONFIST,SCRAPPY,ANGERPOINT
+#----------------------------------------
+[LYCANROC]
+Innates = KEENEYE,SANDRUSH,RECKLESS
+#----------------------------------------
+[LYCANROC_1]
+Innates = KEENEYE,NOCTURNAL,WILDTANTRUM
+#----------------------------------------
+[LYCANROC_2]
+Innates = KEENEYE,OWNTEMPO,SHATTERMARK
 #----------------------------------------
 [ORANGURU]
 Innates = INNERFOCUS
