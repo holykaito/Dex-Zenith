@@ -418,32 +418,32 @@
   {
     "name": "pokemon.txt",
     "path": "PBS/pokemon.txt",
-    "sha": "58edc0ed327592c896b74ba11541b7d5c937ba36",
-    "size": 1183106,
+    "sha": "61cf02b58311f619bd8900b5603f0a523161166d",
+    "size": 1183666,
     "url": "https://api.github.com/repos/holykaito/Pokemon-Lightest-Platinum-v2024/contents/PBS/pokemon.txt?ref=main",
     "html_url": "https://github.com/holykaito/Pokemon-Lightest-Platinum-v2024/blob/main/PBS/pokemon.txt",
-    "git_url": "https://api.github.com/repos/holykaito/Pokemon-Lightest-Platinum-v2024/git/blobs/58edc0ed327592c896b74ba11541b7d5c937ba36",
+    "git_url": "https://api.github.com/repos/holykaito/Pokemon-Lightest-Platinum-v2024/git/blobs/61cf02b58311f619bd8900b5603f0a523161166d",
     "download_url": "https://raw.githubusercontent.com/holykaito/Pokemon-Lightest-Platinum-v2024/main/PBS/pokemon.txt",
     "type": "file",
     "_links": {
       "self": "https://api.github.com/repos/holykaito/Pokemon-Lightest-Platinum-v2024/contents/PBS/pokemon.txt?ref=main",
-      "git": "https://api.github.com/repos/holykaito/Pokemon-Lightest-Platinum-v2024/git/blobs/58edc0ed327592c896b74ba11541b7d5c937ba36",
+      "git": "https://api.github.com/repos/holykaito/Pokemon-Lightest-Platinum-v2024/git/blobs/61cf02b58311f619bd8900b5603f0a523161166d",
       "html": "https://github.com/holykaito/Pokemon-Lightest-Platinum-v2024/blob/main/PBS/pokemon.txt"
     }
   },
   {
     "name": "pokemon_base_Gen_9_Pack.txt",
     "path": "PBS/pokemon_base_Gen_9_Pack.txt",
-    "sha": "6e35441fa1b55c1b8bcffaffc1a13541aa7be373",
-    "size": 155348,
+    "sha": "63bc870880b77e8d5a23a00e281897c5a91f401a",
+    "size": 155413,
     "url": "https://api.github.com/repos/holykaito/Pokemon-Lightest-Platinum-v2024/contents/PBS/pokemon_base_Gen_9_Pack.txt?ref=main",
     "html_url": "https://github.com/holykaito/Pokemon-Lightest-Platinum-v2024/blob/main/PBS/pokemon_base_Gen_9_Pack.txt",
-    "git_url": "https://api.github.com/repos/holykaito/Pokemon-Lightest-Platinum-v2024/git/blobs/6e35441fa1b55c1b8bcffaffc1a13541aa7be373",
+    "git_url": "https://api.github.com/repos/holykaito/Pokemon-Lightest-Platinum-v2024/git/blobs/63bc870880b77e8d5a23a00e281897c5a91f401a",
     "download_url": "https://raw.githubusercontent.com/holykaito/Pokemon-Lightest-Platinum-v2024/main/PBS/pokemon_base_Gen_9_Pack.txt",
     "type": "file",
     "_links": {
       "self": "https://api.github.com/repos/holykaito/Pokemon-Lightest-Platinum-v2024/contents/PBS/pokemon_base_Gen_9_Pack.txt?ref=main",
-      "git": "https://api.github.com/repos/holykaito/Pokemon-Lightest-Platinum-v2024/git/blobs/6e35441fa1b55c1b8bcffaffc1a13541aa7be373",
+      "git": "https://api.github.com/repos/holykaito/Pokemon-Lightest-Platinum-v2024/git/blobs/63bc870880b77e8d5a23a00e281897c5a91f401a",
       "html": "https://github.com/holykaito/Pokemon-Lightest-Platinum-v2024/blob/main/PBS/pokemon_base_Gen_9_Pack.txt"
     }
   },
@@ -482,16 +482,16 @@
   {
     "name": "pokemon_forms.txt",
     "path": "PBS/pokemon_forms.txt",
-    "sha": "13736e4e8648579cc77fa1d4778a0e30403bd423",
-    "size": 105479,
+    "sha": "1ba2156bb14fedac2accecf0d7a8c5483b6b74d8",
+    "size": 105447,
     "url": "https://api.github.com/repos/holykaito/Pokemon-Lightest-Platinum-v2024/contents/PBS/pokemon_forms.txt?ref=main",
     "html_url": "https://github.com/holykaito/Pokemon-Lightest-Platinum-v2024/blob/main/PBS/pokemon_forms.txt",
-    "git_url": "https://api.github.com/repos/holykaito/Pokemon-Lightest-Platinum-v2024/git/blobs/13736e4e8648579cc77fa1d4778a0e30403bd423",
+    "git_url": "https://api.github.com/repos/holykaito/Pokemon-Lightest-Platinum-v2024/git/blobs/1ba2156bb14fedac2accecf0d7a8c5483b6b74d8",
     "download_url": "https://raw.githubusercontent.com/holykaito/Pokemon-Lightest-Platinum-v2024/main/PBS/pokemon_forms.txt",
     "type": "file",
     "_links": {
       "self": "https://api.github.com/repos/holykaito/Pokemon-Lightest-Platinum-v2024/contents/PBS/pokemon_forms.txt?ref=main",
-      "git": "https://api.github.com/repos/holykaito/Pokemon-Lightest-Platinum-v2024/git/blobs/13736e4e8648579cc77fa1d4778a0e30403bd423",
+      "git": "https://api.github.com/repos/holykaito/Pokemon-Lightest-Platinum-v2024/git/blobs/1ba2156bb14fedac2accecf0d7a8c5483b6b74d8",
       "html": "https://github.com/holykaito/Pokemon-Lightest-Platinum-v2024/blob/main/PBS/pokemon_forms.txt"
     }
   },
