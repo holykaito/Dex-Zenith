@@ -31,3 +31,6 @@ body{font-size:16px}.workspace{margin-left:0}header.topbar{height:auto;min-heigh
 /* v10: preserve legible type text inside tooltip property rows. */
 .type,.effect-tooltip .tooltip-properties>.type{color:var(--type-ink,#14271f);text-shadow:none;font-weight:700}
 .tag-move-table{min-width:850px}.tag-move-table .description-cell{min-width:240px;white-space:normal}.tag-move-table td:first-child{min-width:140px}
+
+/* v11: light text on the darkened type badge in Move tooltips. */
+.effect-tooltip .tooltip-properties>.type{color:#fff;background:color-mix(in srgb,var(--type) 60%,#14271f);border-color:color-mix(in srgb,var(--type) 55%,#14271f);text-shadow:none}
