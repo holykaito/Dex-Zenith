@@ -125,3 +125,12 @@ Dữ liệu v7: 1.558 Pokémon/form, 1.051 Move, 530 Ability.
 - Nhãn hệ nổi bật hơn category; trang Ability không hiện ID nội bộ.
 
 Dữ liệu v9: 1558 Pokémon/form, 1064 Move, 539 Ability.
+
+## Bản cập nhật v10
+
+- Chữ nhãn hệ được chọn theo độ tương phản nền, kể cả trong tooltip Move.
+- Item chỉ hiển thị tên, không hiện ID nội bộ ở danh sách và pop-up.
+- Tag Move mở bảng chiêu chi tiết (hệ, category, power, accuracy, PP, priority, tỉ lệ hiệu ứng phụ và mô tả), không liệt kê Pokémon.
+- Đồng bộ lại dữ liệu và các Pokémon/form có Flags Done.
+
+Dữ liệu v10 xác nhận 98 Pokémon/form có flag Done. Độ tương phản chữ nhãn hệ tối thiểu 4,64:1 trên bảng màu hiện tại.

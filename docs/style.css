@@ -27,3 +27,7 @@ body{font-size:16px}.workspace{margin-left:0}header.topbar{height:auto;min-heigh
 .type{background:var(--type);color:#fff;border:1px solid color-mix(in srgb,var(--type) 80%,#142c23);font-size:11px;font-weight:700;padding:6px 9px;min-width:60px;text-shadow:0 1px 1px #0002}
 .category-badge{font-size:10px;font-weight:500;padding:3px 6px;border-color:transparent;background:transparent}.category-physical{color:#a95e56}.category-special{color:#8967a4}.category-status{color:#7c8680}
 .tag-chips{gap:7px}.tag-chip{font-size:12px;border-radius:20px;padding:6px 11px;background:#edf2e7;border-color:#d8e2cd}.tag-chip:hover{background:#dfead3;border-color:#b4c99d}
+
+/* v10: preserve legible type text inside tooltip property rows. */
+.type,.effect-tooltip .tooltip-properties>.type{color:var(--type-ink,#14271f);text-shadow:none;font-weight:700}
+.tag-move-table{min-width:850px}.tag-move-table .description-cell{min-width:240px;white-space:normal}.tag-move-table td:first-child{min-width:140px}
