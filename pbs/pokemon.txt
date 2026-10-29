@@ -430,9 +430,9 @@ Habitat = Forest
 Category = Tiny Bird
 Pokedex = It has an extremely sharp sense of direction. It can unerringly return home to its nest, however far it may be removed from its familiar surroundings.
 Generation = 1
+Flags = Done
 Evolutions = PIDGEOTTO,Level,18
 RaidRanks = 1,2
-Flags = Done
 #-------------------------------
 [PIDGEOTTO]
 Name = Pidgeotto
@@ -458,9 +458,9 @@ Habitat = Forest
 Category = Bird
 Pokedex = This Pokémon flies around, patrolling its large territory. If its living space is violated, it shows no mercy in thoroughly punishing the foe with its sharp claws.
 Generation = 1
+Flags = Done
 Evolutions = PIDGEOT,Level,36
 RaidRanks = 2,3
-Flags = Done
 #-------------------------------
 [PIDGEOT]
 Name = Pidgeot
@@ -486,8 +486,8 @@ Habitat = Forest
 Category = Bird
 Pokedex = Pidgeot has gorgeous, glossy feathers. Many trainers are so captivated by the beautiful feathers on its head that they choose Pidgeot as their Pokémon.
 Generation = 1
-RaidRanks = 3,4,5
 Flags = Done
+RaidRanks = 3,4,5
 #-------------------------------
 [RATTATA]
 Name = Rattata
@@ -1436,10 +1436,10 @@ Habitat = Urban
 Category = Scratch Cat
 Pokedex = Meowth withdraw their sharp claws into their paws to silently sneak about. For some reason, this Pokémon loves shiny coins that glitter with light.
 Generation = 1
+Flags = Done
 WildItemUncommon = QUICKCLAW
 Evolutions = PERSIAN,Level,28,PERRSERKER,None,
 RaidRanks = 1,2
-Flags = Done
 #-------------------------------
 [PERSIAN]
 Name = Persian
@@ -1465,9 +1465,9 @@ Habitat = Urban
 Category = Classy Cat
 Pokedex = A Persian's six bold whiskers sense air movements to determine what is in its vicinity. It becomes docile if grabbed by the whiskers.
 Generation = 1
+Flags = Done
 WildItemUncommon = QUICKCLAW
 RaidRanks = 3,4
-Flags = Done
 #-------------------------------
 [PSYDUCK]
 Name = Psyduck
@@ -4430,16 +4430,16 @@ RaidRanks = 3,4,5
 [SENTRET]
 Name = Sentret
 Types = NORMAL
-BaseStats = 35,46,34,20,35,45
+BaseStats = 45,46,34,40,35,45
 GenderRatio = Female50Percent
 GrowthRate = Medium
 BaseExp = 43
 EVs = ATTACK,1
 CatchRate = 255
 Happiness = 50
-Abilities = RUNAWAY,KEENEYE
-HiddenAbilities = FRISK
-Moves = 1,SCRATCH,4,DEFENSECURL,7,QUICKATTACK,13,FURYSWIPES,16,HELPINGHAND,19,FOLLOWME,25,SLAM,28,REST,31,SUCKERPUNCH,36,AMNESIA,39,BATONPASS,42,DOUBLEEDGE,47,HYPERVOICE
+Abilities = KEENEYE,VIGORDASH
+HiddenAbilities = FLUIDGUARD
+Moves = 1,SCRATCH,4,DEFENSECURL,7,QUICKATTACK,10,RETREAT,13,FURYSWIPES,16,HELPINGHAND,19,FOLLOWME,22,MEGAPUNCH,25,SLAM,28,SUPERFANG,31,BODYSLAM,34,TIDYUP,37,SUCKERPUNCH,40,MEFIRST,43,AMNESIA,46,NASTYPLOT,49,BATONPASS,52,DOUBLEEDGE,55,LASTRESORT,58,HYPERVOICE,61,REST
 TutorMoves = AMNESIA,BATONPASS,BLIZZARD,BODYSLAM,BRICKBREAK,CHARGEBEAM,CHARM,CHILLINGWATER,DIG,DOUBLEEDGE,ENDEAVOR,ENDURE,FACADE,FIREPUNCH,FLAMETHROWER,FLING,FOCUSPUNCH,GRASSKNOT,HELPINGHAND,HYPERVOICE,ICEBEAM,ICEPUNCH,KNOCKOFF,PLAYROUGH,PROTECT,RAINDANCE,REST,REVERSAL,SEEDBOMB,SHADOWBALL,SHADOWCLAW,SLEEPTALK,SOLARBEAM,SUBSTITUTE,SUNNYDAY,SUPERFANG,SURF,SWIFT,TAKEDOWN,THIEF,THUNDER,THUNDERBOLT,THUNDERPUNCH,TRAILBLAZE,TRICK,UPROAR,UTURN,WATERPULSE,TERABLAST
 EggMoves = BABYDOLLEYES,FOCUSENERGY,LASTRESORT,REVERSAL,SLASH,TIDYUP
 EggGroups = Field
@@ -4452,22 +4452,23 @@ Habitat = Grassland
 Category = Scout
 Pokedex = They take turns standing guard when it is time to sleep. The sentry awakens the others if it senses danger. If one gets separated, it turns sleepless with fear.
 Generation = 2
+Flags = Done
 Evolutions = FURRET,Level,15
 RaidRanks = 1,2
 #-------------------------------
 [FURRET]
 Name = Furret
 Types = NORMAL
-BaseStats = 85,76,64,90,45,55
+BaseStats = 85,76,64,110,45,65
 GenderRatio = Female50Percent
 GrowthRate = Medium
 BaseExp = 145
 EVs = SPEED,2
 CatchRate = 90
 Happiness = 50
-Abilities = RUNAWAY,KEENEYE
-HiddenAbilities = FRISK
-Moves = 0,AGILITY,1,QUICKATTACK,1,DEFENSECURL,1,COIL,1,SCRATCH,13,FURYSWIPES,17,HELPINGHAND,21,FOLLOWME,28,SLAM,32,REST,36,SUCKERPUNCH,42,AMNESIA,46,BATONPASS,50,DOUBLEEDGE,56,HYPERVOICE
+Abilities = KEENEYE,VIGORDASH
+HiddenAbilities = FLUIDGUARD
+Moves = 0,AGILITY,1,COIL,1,SCRATCH,4,DEFENSECURL,7,QUICKATTACK,10,RETREAT,13,FURYSWIPES,17,HELPINGHAND,21,FOLLOWME,24,MEGAPUNCH,27,SLAM,30,SUPERFANG,33,BODYSLAM,36,TIDYUP,39,SUCKERPUNCH,42,MEFIRST,45,AMNESIA,48,NASTYPLOT,51,BATONPASS,54,DOUBLEEDGE,57,HYPERVOICE,60,LASTRESORT,63,REST
 TutorMoves = AGILITY,AMNESIA,BATONPASS,BLIZZARD,BODYSLAM,BRICKBREAK,CHARGEBEAM,CHARM,CHILLINGWATER,DIG,DOUBLEEDGE,ENDEAVOR,ENDURE,FACADE,FIREPUNCH,FLAMETHROWER,FLING,FOCUSBLAST,FOCUSPUNCH,GIGAIMPACT,GRASSKNOT,HELPINGHAND,HYPERBEAM,HYPERVOICE,ICEBEAM,ICEPUNCH,KNOCKOFF,PLAYROUGH,PROTECT,RAINDANCE,REST,REVERSAL,SEEDBOMB,SHADOWBALL,SHADOWCLAW,SLEEPTALK,SOLARBEAM,SUBSTITUTE,SUNNYDAY,SUPERFANG,SURF,SWIFT,TAKEDOWN,THIEF,THUNDER,THUNDERBOLT,THUNDERPUNCH,TRAILBLAZE,TRICK,UPROAR,UTURN,WATERPULSE,ZENHEADBUTT,TERABLAST
 EggGroups = Field
 HatchSteps = 3840
@@ -4479,6 +4480,7 @@ Habitat = Grassland
 Category = Long Body
 Pokedex = A Furret has a very slim build. When under attack, it can squirm through narrow spaces and get away. In spite of its short limbs, it is very nimble and fleet.
 Generation = 2
+Flags = Done
 RaidRanks = 2,3
 #-------------------------------
 [HOOTHOOT]
@@ -4493,7 +4495,7 @@ CatchRate = 255
 Happiness = 50
 Abilities = INSOMNIA,KEENEYE
 HiddenAbilities = TINTEDLENS
-Moves = 1,PECK,1,GROWL,3,TACKLE,6,ECHOEDVOICE,9,CONFUSION,12,REFLECT,15,DEFOG,18,AIRSLASH,21,EXTRASENSORY,24,TAKEDOWN,27,UPROAR,30,ROOST,33,MOONBLAST,36,HYPNOSIS,39,DREAMEATER
+Moves = 1,PECK,1,GROWL,3,TACKLE,6,ECHOEDVOICE,9,CONFUSION,10,FOCUSENERGY,12,HYPNOSIS,14,MIRACLEEYE,15,REFLECT,17,CONFIDE,18,RAZORWIND,19,WORKUP,20,DEFOG,22,MIRRORMOVE,24,AIRSLASH,25,TAKEDOWN,26,PSYCHOSHIFT,28,ROOST,29,UPROAR,30,OMINOUSWIND,31,SIMPLEBEAM,32,EXTRASENSORY,34,HEALBLOCK,36,NASTYPLOT,37,SHIELDPRESS,38,MOONBLAST,40,MAGICROOM,42,WONDERROOM,43,PARTINGSHOT,44,EXPANDINGFORCE,46,DREAMEATER,48,LUNARFLARE,50,SKYATTACK,52,NIGHTDAZE,54,INVERSEROOM
 TutorMoves = ACROBATICS,AERIALACE,AGILITY,AIRCUTTER,AIRSLASH,AMNESIA,BRAVEBIRD,CALMMIND,CONFUSERAY,DUALWINGBEAT,ENDURE,FACADE,FEATHERDANCE,FLY,HAZE,HEATWAVE,HURRICANE,HYPERVOICE,IMPRISON,NASTYPLOT,NIGHTSHADE,PROTECT,PSYBEAM,PSYCHIC,PSYCHUP,RAINDANCE,REFLECT,REST,SHADOWBALL,SKILLSWAP,SLEEPTALK,SPITE,STOREDPOWER,SUBSTITUTE,SUNNYDAY,SWIFT,TAILWIND,TAKEDOWN,THIEF,UPROAR,ZENHEADBUTT,TERABLAST
 EggMoves = FEATHERDANCE,NIGHTSHADE,SUPERSONIC,WHIRLWIND,WINGATTACK
 EggGroups = Flying
@@ -4506,6 +4508,7 @@ Habitat = Forest
 Category = Owl
 Pokedex = It has an internal organ that senses the earth's rotation. Using this special organ, a Hoothoot begins hooting at precisely the same time every day.
 Generation = 2
+Flags = Done
 Evolutions = NOCTOWL,Level,20
 RaidRanks = 1,2
 #-------------------------------
@@ -4521,7 +4524,7 @@ CatchRate = 90
 Happiness = 50
 Abilities = INSOMNIA,KEENEYE
 HiddenAbilities = TINTEDLENS
-Moves = 1,GROWL,1,PECK,1,SKYATTACK,1,ECHOEDVOICE,1,TACKLE,9,CONFUSION,12,REFLECT,15,DEFOG,18,AIRSLASH,23,EXTRASENSORY,28,TAKEDOWN,33,UPROAR,38,ROOST,43,MOONBLAST,48,HYPNOSIS,53,DREAMEATER
+Moves = 1,PECK,1,GROWL,3,TACKLE,6,ECHOEDVOICE,9,CONFUSION,10,FOCUSENERGY,12,HYPNOSIS,14,MIRACLEEYE,15,REFLECT,17,CONFIDE,18,RAZORWIND,19,WORKUP,21,DEFOG,23,TAKEDOWN,24,MIRRORMOVE,27,AIRSLASH,29,UPROAR,30,PSYCHOSHIFT,32,SIMPLEBEAM,33,ROOST,36,OMINOUSWIND,39,EXTRASENSORY,41,SHIELDPRESS,42,HEALBLOCK,44,NASTYPLOT,46,MOONBLAST,47,PARTINGSHOT,49,MAGICROOM,52,WONDERROOM,55,EXPANDINGFORCE,58,DREAMEATER,60,NIGHTDAZE,61,LUNARFLARE,64,SKYATTACK,67,INVERSEROOM
 TutorMoves = ACROBATICS,AERIALACE,AGILITY,AIRCUTTER,AIRSLASH,AMNESIA,BODYSLAM,BRAVEBIRD,CALMMIND,CONFUSERAY,CURSE,DOUBLEEDGE,DUALWINGBEAT,ENDURE,FACADE,FEATHERDANCE,FLY,FUTURESIGHT,GIGAIMPACT,HAZE,HEATWAVE,HURRICANE,HYPERBEAM,HYPERVOICE,IMPRISON,NASTYPLOT,NIGHTSHADE,PROTECT,PSYBEAM,PSYCHIC,PSYCHICNOISE,PSYCHUP,RAINDANCE,REFLECT,REST,SCARYFACE,SHADOWBALL,SKILLSWAP,SLEEPTALK,SPITE,STOREDPOWER,SUBSTITUTE,SUNNYDAY,SWIFT,TAILWIND,TAKEDOWN,THIEF,UPROAR,ZENHEADBUTT,TERABLAST
 EggGroups = Flying
 HatchSteps = 3840
@@ -4533,6 +4536,8 @@ Habitat = Forest
 Category = Owl
 Pokedex = It unfailingly catches prey in darkness. Noctowl owe their success to superior vision that allows them to see in minimal light, and to their supple and silent wings.
 Generation = 2
+Flags = Done
+Evolutions = ENCHANTOW,LevelNight,45
 RaidRanks = 3,4
 #-------------------------------
 [LEDYBA]
@@ -5164,9 +5169,9 @@ Habitat = Grassland
 Category = Cottonweed
 Pokedex = This Pokémon drifts and floats with the wind. If it senses the approach of strong winds, a Hoppip links leaves with others to prepare against being blown away.
 Generation = 2
+Flags = Done
 Evolutions = SKIPLOOM,Level,18
 RaidRanks = 1,2
-Flags = Done
 #-------------------------------
 [SKIPLOOM]
 Name = Skiploom
@@ -5192,9 +5197,9 @@ Habitat = Grassland
 Category = Cottonweed
 Pokedex = It blossoms when the temperature rises above 64 degrees F. Because its flower's blooming changes with the temperature, it is sometimes used as a thermometer.
 Generation = 2
+Flags = Done
 Evolutions = JUMPLUFF,Level,27
 RaidRanks = 2,3
-Flags = Done
 #-------------------------------
 [JUMPLUFF]
 Name = Jumpluff
@@ -5220,8 +5225,8 @@ Habitat = Grassland
 Category = Cottonweed
 Pokedex = Jumpluff ride warm southern winds to cross the sea and fly to foreign lands. This Pokémon lands when it encounters cold air while it is floating.
 Generation = 2
-RaidRanks = 3,4,5
 Flags = Done
+RaidRanks = 3,4,5
 #-------------------------------
 [AIPOM]
 Name = Aipom
@@ -7209,9 +7214,9 @@ Habitat = Grassland
 Category = Bite
 Pokedex = It savagely threatens foes with bared fangs. It chases after fleeing targets tenaciously. It turns tail and runs, however, if the foe strikes back.
 Generation = 3
+Flags = Done
 Evolutions = MIGHTYENA,Level,18
 RaidRanks = 1,2
-Flags = Done
 #-------------------------------
 [MIGHTYENA]
 Name = Mightyena
@@ -7237,8 +7242,9 @@ Habitat = Grassland
 Category = Bite
 Pokedex = In the wild, Mightyena live in a pack. They never defy their leader's orders. They defeat foes with perfectly coordinated teamwork.
 Generation = 3
-RaidRanks = 3,4
 Flags = Done
+Evolutions = HIGHYENA,Level,43
+RaidRanks = 3,4
 #-------------------------------
 [ZIGZAGOON]
 Name = Zigzagoon
@@ -7265,11 +7271,11 @@ Habitat = Grassland
 Category = Tiny Raccoon
 Pokedex = Rubbing its nose against the ground, it always wanders about back and forth in search of something. It is distinguished by the zigzag footprints it leaves.
 Generation = 3
+Flags = Done
 WildItemCommon = POTION
 WildItemUncommon = REVIVE
 Evolutions = LINOONE,Level,20
 RaidRanks = 1,2
-Flags = Done
 #-------------------------------
 [LINOONE]
 Name = Linoone
@@ -7295,10 +7301,10 @@ Habitat = Grassland
 Category = Rushing
 Pokedex = It is exceedingly fast if it only has to run in a straight line. When it spots pond- dwelling prey underwater, it quickly leaps in and catches it with its sharp claws.
 Generation = 3
+Flags = Done
 WildItemCommon = POTION
 WildItemUncommon = MAXREVIVE
 RaidRanks = 2,3
-Flags = Done
 #-------------------------------
 [WURMPLE]
 Name = Wurmple
@@ -7448,8 +7454,8 @@ EVs = SPECIAL_DEFENSE,1
 CatchRate = 255
 Happiness = 50
 Abilities = SWIFTSWIM,RAINDISH
-HiddenAbilities = DANCINGPANIC
-Moves = 1,ASTONISH,1,GROWL,3,ABSORB,6,WATERGUN,9,MIST,12,MEGADRAIN,16,FLAIL,20,BUBBLEBEAM,24,LEECHSEED,28,GIGADRAIN,33,RAINDANCE,38,ZENHEADBUTT,43,ENERGYBALL
+HiddenAbilities = HYDROPONIC
+Moves = 1,ASTONISH,1,GROWL,3,ABSORB,6,WATERGUN,9,MIST,12,MEGADRAIN,16,FLAIL,18,BULLETSEED,20,BUBBLEBEAM,23,TICKLE,26,GRASSKNOT,29,LEECHSEED,32,GIGADRAIN,35,SUDDENSPLASH,38,RAINDANCE,41,WATERCHANNEL,44,ZENHEADBUTT,47,BUBBLEBLASTER,50,ENERGYBALL
 TutorMoves = BLIZZARD,BODYSLAM,BULLETSEED,CHILLINGWATER,DISARMINGVOICE,DOUBLEEDGE,ENDURE,ENERGYBALL,FACADE,GIGADRAIN,GRASSKNOT,GRASSYGLIDE,GRASSYTERRAIN,ICEBEAM,ICYWIND,MAGICALLEAF,MUDDYWATER,PROTECT,RAINDANCE,REST,SEEDBOMB,SLEEPTALK,SOLARBEAM,SUBSTITUTE,SUNNYDAY,SURF,SWORDSDANCE,TAKEDOWN,THIEF,TRAILBLAZE,UPROAR,WATERPULSE,WEATHERBALL,WHIRLPOOL,ZENHEADBUTT,TERABLAST
 EggMoves = COUNTER,RAZORLEAF,SWEETSCENT,SYNTHESIS,TEETERDANCE,TICKLE
 EggGroups = Water1,Grass
@@ -7462,6 +7468,7 @@ Habitat = WatersEdge
 Category = Water Weed
 Pokedex = This Pokémon lives in ponds with clean water. It is known to ferry small Pokémon across ponds by carrying them on the broad leaf on its head.
 Generation = 3
+Flags = Done
 WildItemUncommon = MENTALHERB
 Evolutions = LOMBRE,Level,14
 RaidRanks = 1,2
@@ -7477,8 +7484,8 @@ EVs = SPECIAL_DEFENSE,2
 CatchRate = 120
 Happiness = 50
 Abilities = SWIFTSWIM,RAINDISH
-HiddenAbilities = DANCINGPANIC
-Moves = 1,WATERGUN,1,ASTONISH,1,TEETERDANCE,1,ABSORB,1,KNOCKOFF,1,FAKEOUT,1,FLAIL,1,GROWL,9,MIST,12,MEGADRAIN,18,FURYSWIPES,24,BUBBLEBEAM,30,LEECHSEED,36,GIGADRAIN,50,ZENHEADBUTT,57,ENERGYBALL,64,HYDROPUMP
+HiddenAbilities = HYDROPONIC
+Moves = 0,DOUBLESLAP,1,WATERGUN,1,ASTONISH,1,TEETERDANCE,1,ABSORB,1,KNOCKOFF,1,FAKEOUT,1,FLAIL,1,GROWL,9,MIST,12,MEGADRAIN,17,FURYSWIPES,20,BULLETSEED,23,BUBBLEBEAM,26,TICKLE,29,GRASSKNOT,32,LEECHSEED,35,GIGADRAIN,38,SUDDENSPLASH,41,RAINDANCE,44,WATERCHANNEL,47,UPROAR,50,ZENHEADBUTT,53,BUBBLEBLASTER,56,ENTRAINMENT,59,ENERGYBALL,62,HYDROPUMP
 TutorMoves = BLIZZARD,BODYSLAM,BRICKBREAK,BULLETSEED,CHILLINGWATER,DISARMINGVOICE,DOUBLEEDGE,DRAINPUNCH,ENCORE,ENDURE,ENERGYBALL,FACADE,FIREPUNCH,FLING,GIGADRAIN,GRASSKNOT,GRASSYGLIDE,GRASSYTERRAIN,HYDROPUMP,HYPERVOICE,ICEBEAM,ICEPUNCH,ICYWIND,KNOCKOFF,MAGICALLEAF,METRONOME,MUDDYWATER,MUDSHOT,PROTECT,RAINDANCE,REST,SEEDBOMB,SLEEPTALK,SOLARBEAM,SUBSTITUTE,SUNNYDAY,SURF,SWORDSDANCE,TAKEDOWN,THIEF,THUNDERPUNCH,TRAILBLAZE,UPROAR,WATERFALL,WATERPULSE,WEATHERBALL,WHIRLPOOL,ZENHEADBUTT,TERABLAST
 EggGroups = Water1,Grass
 HatchSteps = 3840
@@ -7490,6 +7497,7 @@ Habitat = WatersEdge
 Category = Jolly
 Pokedex = In the evening, it takes great delight in popping out of rivers and startling people. It feeds on aquatic moss that grows on rocks in the riverbed.
 Generation = 3
+Flags = Done
 WildItemUncommon = MENTALHERB
 Evolutions = LUDICOLO,Item,WATERSTONE
 RaidRanks = 2,3
@@ -7505,8 +7513,8 @@ EVs = SPECIAL_DEFENSE,3
 CatchRate = 45
 Happiness = 50
 Abilities = SWIFTSWIM,RAINDISH
-HiddenAbilities = DANCINGPANIC
-Moves = -1,GROWL,-1,MIST,-1,WATERGUN,-1,HYDROPUMP,-1,ABSORB,-1,MEGADRAIN,-1,FURYSWIPES,-1,FLAIL,-1,KNOCKOFF,-1,TEETERDANCE,-1,ASTONISH,-1,ENERGYBALL,-1,ZENHEADBUTT,1,RAINDANCE,1,BUBBLEBEAM,1,FAKEOUT
+HiddenAbilities = HYDROPONIC
+Moves = -1,GROWL,-1,MIST,-1,WATERGUN,-1,HYDROPUMP,-1,ABSORB,-1,MEGADRAIN,-1,FURYSWIPES,-1,FLAIL,-1,KNOCKOFF,-1,TEETERDANCE,-1,ASTONISH,-1,ENERGYBALL,-1,ZENHEADBUTT,-1,LEECHSEED,-1,GIGADRAIN,-1,DOUBLESLAP,-1,GRASSKNOT,-1,BULLETSEED,-1,ENTRAINMENT,-1,TICKLE,-1,REVELATIONDANCE,-1,AQUASTEP,-1,UPROAR,-1,QUIVERDANCE,-1,SUDDENSPLASH,-1,WATERCHANNEL,-1,BUBBLEBLASTER,1,RAINDANCE,1,BUBBLEBEAM,1,FAKEOUT
 TutorMoves = AMNESIA,BLIZZARD,BODYSLAM,BRICKBREAK,BULLETSEED,CHILLINGWATER,DISARMINGVOICE,DOUBLEEDGE,DRAINPUNCH,ENCORE,ENDURE,ENERGYBALL,FACADE,FIREPUNCH,FLING,FOCUSBLAST,FOCUSPUNCH,GIGADRAIN,GIGAIMPACT,GRASSKNOT,GRASSYGLIDE,GRASSYTERRAIN,HYDROPUMP,HYPERBEAM,HYPERVOICE,ICEBEAM,ICEPUNCH,ICESPINNER,ICYWIND,KNOCKOFF,LEAFSTORM,MAGICALLEAF,METRONOME,MUDDYWATER,MUDSHOT,PROTECT,RAINDANCE,REST,SEEDBOMB,SLEEPTALK,SOLARBEAM,SUBSTITUTE,SUNNYDAY,SURF,SWIFT,SWORDSDANCE,TAKEDOWN,THIEF,THUNDERPUNCH,TRAILBLAZE,UPROAR,WATERFALL,WATERPULSE,WEATHERBALL,WHIRLPOOL,ZENHEADBUTT,TERABLAST
 EggGroups = Water1,Grass
 HatchSteps = 3840
@@ -7518,7 +7526,7 @@ Habitat = WatersEdge
 Category = Carefree
 Pokedex = When it hears festive music, all the cells in its body become stimulated, and it begins moving in rhythm. It does not quail even when it faces a tough opponent.
 Generation = 3
-Flags = HasGenderedSprites
+Flags = HasGenderedSprites,Done
 WildItemUncommon = MENTALHERB
 RaidRanks = 3,4,5
 #-------------------------------
@@ -7533,8 +7541,8 @@ EVs = DEFENSE,1
 CatchRate = 255
 Happiness = 50
 Abilities = CHLOROPHYLL,EARLYBIRD
-HiddenAbilities = PICKPOCKET
-Moves = 1,HARDEN,1,TACKLE,3,ABSORB,6,ASTONISH,9,GROWTH,12,ROLLOUT,15,MEGADRAIN,18,PAYBACK,21,HEADBUTT,24,SUNNYDAY,27,SYNTHESIS,30,SUCKERPUNCH,33,EXPLOSION
+HiddenAbilities = INFILTRATOR
+Moves = 1,HARDEN,1,TACKLE,3,ABSORB,6,ASTONISH,7,QUICKATTACK,9,GROWTH,12,ROLLOUT,14,GRASSWHISTLE,15,MEGADRAIN,18,PAYBACK,21,HEADBUTT,24,SUNNYDAY,26,GRASSYGLIDE,27,SYNTHESIS,30,SUCKERPUNCH,35,FORESTFURY,38,NASTYPLOT,48,LEAFSTORM,51,EXPLOSION
 TutorMoves = AMNESIA,BODYSLAM,BULLETSEED,CURSE,DIG,DOUBLEEDGE,ENDEAVOR,ENDURE,ENERGYBALL,FACADE,FALSESWIPE,FOULPLAY,GIGADRAIN,GRASSKNOT,GRASSYGLIDE,GRASSYTERRAIN,LEAFSTORM,MAGICALLEAF,NASTYPLOT,PROTECT,RAINDANCE,REST,SEEDBOMB,SHADOWBALL,SLEEPTALK,SOLARBEAM,SPITE,SUBSTITUTE,SUNNYDAY,TAKEDOWN,TRAILBLAZE,TERABLAST
 EggMoves = DEFOG,LEECHSEED,NIGHTSLASH,QUICKATTACK,TAKEDOWN,WORRYSEED
 EggGroups = Field,Grass
@@ -7547,6 +7555,7 @@ Habitat = Forest
 Category = Acorn
 Pokedex = It hangs off branches and absorbs nutrients. When it finishes eating, its body becomes so heavy that it drops to the ground with a thump.
 Generation = 3
+Flags = Done
 WildItemUncommon = POWERHERB
 Evolutions = NUZLEAF,Level,14
 RaidRanks = 1,2
@@ -7562,8 +7571,8 @@ EVs = ATTACK,2
 CatchRate = 120
 Happiness = 50
 Abilities = CHLOROPHYLL,EARLYBIRD
-HiddenAbilities = PICKPOCKET
-Moves = 0,RAZORLEAF,1,TACKLE,1,ABSORB,1,HARDEN,1,EXPLOSION,1,SWAGGER,1,AIRCUTTER,1,FAKEOUT,1,TORMENT,1,ASTONISH,9,GROWTH,12,ROLLOUT,18,MEGADRAIN,24,PAYBACK,30,SYNTHESIS,36,SUNNYDAY,43,EXTRASENSORY,50,SUCKERPUNCH,57,LEAFBLADE
+HiddenAbilities = INFILTRATOR
+Moves = 0,RAZORLEAF,1,TACKLE,1,ABSORB,1,HARDEN,1,SWAGGER,1,AIRCUTTER,1,FAKEOUT,1,TORMENT,1,ASTONISH,7,QUICKATTACK,9,GROWTH,12,ROLLOUT,16,MEGADRAIN,19,GRASSWHISTLE,22,PAYBACK,25,RAZORWIND,28,SYNTHESIS,31,GRASSYGLIDE,34,SUNNYDAY,37,LASHOUT,40,FORESTFURY,43,EXTRASENSORY,46,NIGHTSLASH,49,BLACKMAGIC,52,SUCKERPUNCH,55,NASTYPLOT,58,PERISHSONG,61,LEAFBLADE,64,LEAFSTORM,67,EXPLOSION
 TutorMoves = AIRCUTTER,AMNESIA,BODYSLAM,BRICKBREAK,BULLETSEED,CHILLINGWATER,CURSE,DARKPULSE,DIG,DOUBLEEDGE,ENDEAVOR,ENDURE,ENERGYBALL,FACADE,FALSESWIPE,FLING,FOULPLAY,GIGADRAIN,GRASSKNOT,GRASSYGLIDE,GRASSYTERRAIN,KNOCKOFF,LASHOUT,LEAFSTORM,LOWKICK,LOWSWEEP,MAGICALLEAF,NASTYPLOT,PROTECT,PSYCHUP,RAINDANCE,REST,ROCKSLIDE,ROCKTOMB,SCARYFACE,SEEDBOMB,SHADOWBALL,SLEEPTALK,SNARL,SOLARBEAM,SOLARBLADE,SPITE,SUBSTITUTE,SUNNYDAY,SWIFT,SWORDSDANCE,TAKEDOWN,THIEF,TRAILBLAZE,UPROAR,WEATHERBALL,TERABLAST
 EggGroups = Field,Grass
 HatchSteps = 3840
@@ -7575,7 +7584,7 @@ Habitat = Forest
 Category = Wily
 Pokedex = A forest-dwelling Pokémon that is skilled at climbing trees. Its long and pointed nose is its weak point. It loses power if the nose is gripped.
 Generation = 3
-Flags = HasGenderedSprites
+Flags = HasGenderedSprites,Done
 WildItemUncommon = POWERHERB
 Evolutions = SHIFTRY,Item,LEAFSTONE
 RaidRanks = 2,3
@@ -7591,8 +7600,8 @@ EVs = ATTACK,3
 CatchRate = 45
 Happiness = 50
 Abilities = CHLOROPHYLL,WINDRIDER
-HiddenAbilities = PICKPOCKET
-Moves = -1,WHIRLWIND,-1,TACKLE,-1,ABSORB,-1,MEGADRAIN,-1,GROWTH,-1,RAZORLEAF,-1,HARDEN,-1,EXPLOSION,-1,ROLLOUT,-1,SWAGGER,-1,SYNTHESIS,-1,BEATUP,-1,FAKEOUT,-1,TORMENT,-1,ASTONISH,-1,EXTRASENSORY,-1,SUCKERPUNCH,0,LEAFBLADE,1,AIRCUTTER,1,PAYBACK,1,HURRICANE,1,SUNNYDAY
+HiddenAbilities = INFILTRATOR
+Moves = -1,WHIRLWIND,-1,TACKLE,-1,ABSORB,-1,MEGADRAIN,-1,GROWTH,-1,RAZORLEAF,-1,HARDEN,-1,EXPLOSION,-1,ROLLOUT,-1,SWAGGER,-1,SYNTHESIS,-1,BEATUP,-1,FAKEOUT,-1,TORMENT,-1,ASTONISH,-1,EXTRASENSORY,-1,SUCKERPUNCH,-1,LEAFBLADE,-1,QUICKATTACK,-1,GRASSWHISTLE,-1,RAZORWIND,-1,GRASSYGLIDE,-1,LASHOUT,-1,FORESTFURY,-1,NIGHTSLASH,-1,BLACKMAGIC,-1,NASTYPLOT,-1,PERISHSONG,-1,LEAFSTORM,-1,FLAMETONGUE,-1,WHIRLWINDKICK,0,LEAFTORNADO,1,AIRCUTTER,1,PAYBACK,1,HURRICANE,1,SUNNYDAY
 TutorMoves = AERIALACE,AIRCUTTER,AIRSLASH,AMNESIA,BODYSLAM,BRICKBREAK,BULLETSEED,CHILLINGWATER,CONFUSERAY,CURSE,DARKPULSE,DIG,DOUBLEEDGE,ENDEAVOR,ENDURE,ENERGYBALL,FACADE,FALSESWIPE,FLING,FOCUSBLAST,FOULPLAY,GIGADRAIN,GIGAIMPACT,GRASSKNOT,GRASSYGLIDE,GRASSYTERRAIN,HEATWAVE,HEX,HURRICANE,HYPERBEAM,ICYWIND,IMPRISON,KNOCKOFF,LASHOUT,LEAFSTORM,LOWKICK,LOWSWEEP,MAGICALLEAF,NASTYPLOT,PETALBLIZZARD,PROTECT,PSYCHUP,RAINDANCE,REST,REVERSAL,ROCKSLIDE,ROCKTOMB,SCARYFACE,SEEDBOMB,SHADOWBALL,SLEEPTALK,SNARL,SOLARBEAM,SOLARBLADE,SPITE,SUBSTITUTE,SUNNYDAY,SWIFT,SWORDSDANCE,TAILWIND,TAKEDOWN,TAUNT,THIEF,THROATCHOP,TOXICSPIKES,TRAILBLAZE,UPPERHAND,UPROAR,VACUUMWAVE,WEATHERBALL,WILLOWISP,XSCISSOR,TERABLAST
 EggGroups = Field,Grass
 HatchSteps = 3840
@@ -7604,7 +7613,7 @@ Habitat = Forest
 Category = Wicked
 Pokedex = It is said to arrive on chilly, wintry winds. Feared from long ago as the guardian of forests, this Pokémon lives in a deep forest where people do not venture.
 Generation = 3
-Flags = HasGenderedSprites
+Flags = HasGenderedSprites,Done
 WildItemUncommon = POWERHERB
 RaidRanks = 3,4,5
 #-------------------------------
@@ -7687,10 +7696,10 @@ Habitat = Sea
 Category = Seagull
 Pokedex = It makes its nest on a sheer cliff at the edge of the sea. It has trouble keeping its wings flapping in flight. Instead, it soars on updrafts.
 Generation = 3
+Flags = Done
 WildItemCommon = PRETTYFEATHER
 Evolutions = PELIPPER,Level,25
 RaidRanks = 1,2
-Flags = Done
 #-------------------------------
 [PELIPPER]
 Name = Pelipper
@@ -7716,9 +7725,9 @@ Habitat = Sea
 Category = Water Bird
 Pokedex = It skims the tops of waves as it flies. When it spots prey, it uses its large beak to scoop up the victim with water. It protects its eggs in its beak.
 Generation = 3
+Flags = Done
 WildItemCommon = PRETTYFEATHER
 RaidRanks = 3,4
-Flags = Done
 #-------------------------------
 [RALTS]
 Name = Ralts
@@ -7745,9 +7754,9 @@ Habitat = Urban
 Category = Feeling
 Pokedex = A Ralts has the power to sense the emotions of people and Pokémon with the horns on its head. It takes cover if it senses any hostility.
 Generation = 3
+Flags = Done
 Evolutions = KIRLIA,Level,20
 RaidRanks = 1,2
-Flags = Done
 #-------------------------------
 [KIRLIA]
 Name = Kirlia
@@ -7773,9 +7782,9 @@ Habitat = Urban
 Category = Emotion
 Pokedex = A Kirlia has the psychic power to create a rip in the dimensions and see into the future. It is said to dance with pleasure on sunny mornings.
 Generation = 3
+Flags = Done
 Evolutions = GARDEVOIR,Level,30,GALLADE,ItemMale,DAWNSTONE
 RaidRanks = 2,3
-Flags = Done
 #-------------------------------
 [GARDEVOIR]
 Name = Gardevoir
@@ -7801,8 +7810,8 @@ Habitat = Urban
 Category = Embrace
 Pokedex = It apparently does not feel the pull of gravity because it supports itself with psychic power. It will give its life to protect its trainer.
 Generation = 3
-RaidRanks = 3,4,5
 Flags = Done
+RaidRanks = 3,4,5
 #-------------------------------
 [SURSKIT]
 Name = Surskit
@@ -10695,9 +10704,9 @@ Habitat = Forest
 Category = Tiny Leaf
 Pokedex = Made from soil, the shell on its back hardens when it drinks water. It lives along lakes.
 Generation = 4
+Flags = Done
 Evolutions = GROTLE,Level,18
 RaidRanks = 1,2
-Flags = Done
 #-------------------------------
 [GROTLE]
 Name = Grotle
@@ -10723,9 +10732,9 @@ Habitat = Forest
 Category = Grove
 Pokedex = It lives along water in forests. In the daytime, it leaves the forest to sunbathe its treed shell.
 Generation = 4
+Flags = Done
 Evolutions = TORTERRA,Level,32
 RaidRanks = 2,3
-Flags = Done
 #-------------------------------
 [TORTERRA]
 Name = Torterra
@@ -10751,8 +10760,8 @@ Habitat = Forest
 Category = Continent
 Pokedex = Small Pokémon occasionally gather on its unmoving back to begin building their nests.
 Generation = 4
-RaidRanks = 3,4,5
 Flags = Done
+RaidRanks = 3,4,5
 #-------------------------------
 [CHIMCHAR]
 Name = Chimchar
@@ -10779,9 +10788,9 @@ Habitat = Forest
 Category = Chimp
 Pokedex = It agilely scales sheer cliffs to live atop craggy mountains. Its fire is put out when it sleeps.
 Generation = 4
+Flags = Done
 Evolutions = MONFERNO,Level,14
 RaidRanks = 1,2
-Flags = Done
 #-------------------------------
 [MONFERNO]
 Name = Monferno
@@ -10807,9 +10816,9 @@ Habitat = Forest
 Category = Playful
 Pokedex = To intimidate attackers, it stretches the fire on its tail to make itself appear bigger.
 Generation = 4
+Flags = Done
 Evolutions = INFERNAPE,Level,36
 RaidRanks = 2,3
-Flags = Done
 #-------------------------------
 [INFERNAPE]
 Name = Infernape
@@ -10835,8 +10844,8 @@ Habitat = Forest
 Category = Flame
 Pokedex = It uses a special kind of martial arts involving all its limbs. Its fire never goes out.
 Generation = 4
-RaidRanks = 3,4,5
 Flags = Done
+RaidRanks = 3,4,5
 #-------------------------------
 [PIPLUP]
 Name = Piplup
@@ -10863,9 +10872,9 @@ Habitat = WatersEdge
 Category = Penguin
 Pokedex = Because it is very proud, it hates accepting food from people. Its thick down guards it from cold.
 Generation = 4
+Flags = Done
 Evolutions = PRINPLUP,Level,16
 RaidRanks = 1,2
-Flags = Done
 #-------------------------------
 [PRINPLUP]
 Name = Prinplup
@@ -10891,9 +10900,9 @@ Habitat = WatersEdge
 Category = Penguin
 Pokedex = It lives alone, away from others. Apparently, every one of them believes it is the most important.
 Generation = 4
+Flags = Done
 Evolutions = EMPOLEON,Level,36
 RaidRanks = 2,3
-Flags = Done
 #-------------------------------
 [EMPOLEON]
 Name = Empoleon
@@ -10919,8 +10928,8 @@ Habitat = WatersEdge
 Category = Emperor
 Pokedex = The three horns that extend from its beak attest to its power. The leader has the biggest horns.
 Generation = 4
-RaidRanks = 3,4,5
 Flags = Done
+RaidRanks = 3,4,5
 #-------------------------------
 [STARLY]
 Name = Starly
@@ -11919,9 +11928,9 @@ Habitat = Urban
 Category = Catty
 Pokedex = It claws if displeased and purrs when affectionate. Its fickleness is very popular among some.
 Generation = 4
+Flags = Done
 Evolutions = PURUGLY,Level,38
 RaidRanks = 1,2
-Flags = Done
 #-------------------------------
 [PURUGLY]
 Name = Purugly
@@ -11947,8 +11956,8 @@ Habitat = Urban
 Category = Tiger Cat
 Pokedex = It is a brazen brute that barges its way into another Pokémon's nest and claims it as its own.
 Generation = 4
-RaidRanks = 3,4
 Flags = Done
+RaidRanks = 3,4
 #-------------------------------
 [CHINGLING]
 Name = Chingling
@@ -13139,8 +13148,8 @@ Habitat = Urban
 Category = Blade
 Pokedex = A master of courtesy and swordsmanship, it fights using extending swords on its elbows.
 Generation = 4
-RaidRanks = 3,4,5
 Flags = Done
+RaidRanks = 3,4,5
 #-------------------------------
 [PROBOPASS]
 Name = Probopass
@@ -13917,9 +13926,9 @@ Habitat = Grassland
 Category = Scout
 Pokedex = Extremely cautious, they take shifts to maintain a constant watch of their nest. They feel insecure without a lookout.
 Generation = 5
+Flags = Done
 Evolutions = WATCHOG,Level,20
 RaidRanks = 1,2
-Flags = Done
 #-------------------------------
 [WATCHOG]
 Name = Watchog
@@ -13945,8 +13954,8 @@ Habitat = Grassland
 Category = Lookout
 Pokedex = They make the patterns on their bodies shine in order to threaten predators. Keen eyesight lets them see in the dark.
 Generation = 5
-RaidRanks = 2,3
 Flags = Done
+RaidRanks = 2,3
 #-------------------------------
 [LILLIPUP]
 Name = Lillipup
@@ -14054,9 +14063,9 @@ Habitat = Urban
 Category = Devious
 Pokedex = Its cute act is a ruse. When victims let down their guard, they find their items taken. It attacks with sharp claws.
 Generation = 5
+Flags = Done
 Evolutions = LIEPARD,Level,20
 RaidRanks = 1,2
-Flags = Done
 #-------------------------------
 [LIEPARD]
 Name = Liepard
@@ -14082,8 +14091,8 @@ Habitat = Urban
 Category = Cruel
 Pokedex = Stealthily, it sneaks up on its target, striking from behind before its victim has a chance to react.
 Generation = 5
-RaidRanks = 3,4
 Flags = Done
+RaidRanks = 3,4
 #-------------------------------
 [PANSAGE]
 Name = Pansage
@@ -14326,9 +14335,9 @@ Habitat = Urban
 Category = Tiny Pigeon
 Pokedex = These Pokémon live in cities. They are accustomed to people. Flocks often gather in parks and plazas.
 Generation = 5
+Flags = Done
 Evolutions = TRANQUILL,Level,21
 RaidRanks = 1,2
-Flags = Done
 #-------------------------------
 [TRANQUILL]
 Name = Tranquill
@@ -14354,9 +14363,9 @@ Habitat = Urban
 Category = Wild Pigeon
 Pokedex = Many people believe that, deep in the forest where Tranquill live, there is a peaceful place where there is no war.
 Generation = 5
+Flags = Done
 Evolutions = UNFEZANT,Level,32
 RaidRanks = 2,3
-Flags = Done
 #-------------------------------
 [UNFEZANT]
 Name = Unfezant
@@ -14382,9 +14391,8 @@ Habitat = Urban
 Category = Proud
 Pokedex = Males have plumage on their heads. They will never let themselves feel close to anyone other than their Trainers.
 Generation = 5
-Flags = HasGenderedSprites
+Flags = Done,HasGenderedSprites
 RaidRanks = 3,4,5
-Flags = Done
 #-------------------------------
 [BLITZLE]
 Name = Blitzle
@@ -20231,8 +20239,9 @@ BaseExp = 60
 EVs = ATTACK,1
 CatchRate = 255
 Happiness = 50
-Abilities = SWARM
-Moves = 1,MUDSLAP,1,VISEGRIP,5,STRINGSHOT,10,BUGBITE,15,BITE,21,SPARK,25,STICKYWEB,30,XSCISSOR,35,CRUNCH,40,DIG
+Abilities = PICKUP,STRONGJAW
+HiddenAbilities = MOLDBREAKER
+Moves = 1,MUDSLAP,1,VISEGRIP,3,MUDSPORT,5,STRINGSHOT,9,BUGBITE,12,POUNCE,15,BITE,18,CREEPOUT,21,SPARK,23,MUDBOMB,26,THUNDERFANG,29,STICKYWEB,32,SKITTERSMACK,35,XSCISSOR,38,CRUNCH,41,SOILDRAIN,44,DIG,50,GUILLOTINE
 TutorMoves = BATONPASS,BUGBITE,CHARGE,CHARGEBEAM,CRUNCH,DIG,ELECTRICTERRAIN,ELECTROWEB,ENDURE,FACADE,LIGHTSCREEN,LUNGE,MUDSHOT,MUDSLAP,POISONJAB,POUNCE,PROTECT,RAINDANCE,REST,SKITTERSMACK,SLEEPTALK,STRUGGLEBUG,SUBSTITUTE,TAKEDOWN,THUNDERBOLT,THUNDERWAVE,VOLTSWITCH,WILDCHARGE,XSCISSOR,TERABLAST
 EggMoves = DISCHARGE,HARDEN
 EggGroups = Bug
@@ -20258,8 +20267,9 @@ BaseExp = 140
 EVs = DEFENSE,2
 CatchRate = 120
 Happiness = 50
-Abilities = BATTERY
-Moves = 0,CHARGE,1,STRINGSHOT,1,MUDSLAP,1,BUGBITE,1,VISEGRIP,15,BITE,23,SPARK,29,STICKYWEB,36,XSCISSOR,43,CRUNCH,50,DIG,57,IRONDEFENSE,64,DISCHARGE
+Abilities = BATTERY,STRONGJAW
+HiddenAbilities = VOLTABSORB
+Moves = 0,CHARGE,1,THUNDERSHOCK,1,MUDSLAP,1,VISEGRIP,3,MUDSPORT,5,STRINGSHOT,9,BUGBITE,12,POUNCE,15,BITE,18,CREEPOUT,21,SPARK,24,MUDBOMB,27,THUNDERFANG,30,STICKYWEB,33,SKITTERSMACK,36,SIGNALBEAM,39,XSCISSOR,42,SOILDRAIN,45,CRUNCH,48,IRONDEFENSE,51,DIG,54,DISCHARGE,60,GUILLOTINE
 TutorMoves = BATONPASS,BUGBITE,CHARGE,CHARGEBEAM,CRUNCH,DIG,EERIEIMPULSE,ELECTRICTERRAIN,ELECTROBALL,ELECTROWEB,ENDURE,FACADE,IRONDEFENSE,LIGHTSCREEN,LUNGE,MUDSHOT,MUDSLAP,POISONJAB,POUNCE,PROTECT,RAINDANCE,REST,SKITTERSMACK,SLEEPTALK,STRUGGLEBUG,SUBSTITUTE,TAKEDOWN,THUNDER,THUNDERBOLT,THUNDERWAVE,VOLTSWITCH,WILDCHARGE,XSCISSOR,TERABLAST
 EggGroups = Bug
 HatchSteps = 3840
@@ -20285,8 +20295,9 @@ BaseExp = 250
 EVs = SPECIAL_ATTACK,3
 CatchRate = 45
 Happiness = 50
-Abilities = LEVITATE
-Moves = -1,DIG,-1,MUDSLAP,-1,IRONDEFENSE,-1,XSCISSOR,-1,BUGBITE,-1,VISEGRIP,0,THUNDERBOLT,1,STRINGSHOT,1,CRUNCH,1,CHARGE,1,DISCHARGE,15,BITE,23,SPARK,29,STICKYWEB,36,BUGBUZZ,43,GUILLOTINE,50,FLY,57,AGILITY,64,ZAPCANNON
+Abilities = OVERCHARGE,UNBURDEN
+HiddenAbilities = CAPACITOR
+Moves = -1,DIG,-1,MUDSLAP,-1,MUDSPORT,-1,MUDBOMB,-1,THUNDERFANG,-1,IRONDEFENSE,-1,XSCISSOR,-1,BUGBITE,-1,VISEGRIP,0,THUNDERBOLT,1,THUNDERSHOCK,1,CHARGE,5,STRINGSHOT,12,POUNCE,15,BITE,18,CREEPOUT,21,SPARK,30,STICKYWEB,33,SKITTERSMACK,36,SIGNALBEAM,39,AIRSLASH,42,SOILDRAIN,45,BUGBUZZ,48,CRUNCH,51,DISCHARGE,54,SUPERSONICBREAK,57,FLY,60,GUILLOTINE,63,AGILITY,66,ZAPCANNON
 TutorMoves = ACROBATICS,AGILITY,AIRSLASH,BATONPASS,BUGBITE,BUGBUZZ,BULLDOZE,CHARGE,CHARGEBEAM,CRUNCH,DIG,EERIEIMPULSE,ELECTRICTERRAIN,ELECTROBALL,ELECTROWEB,ENDURE,ENERGYBALL,FACADE,FLASHCANNON,FLY,GIGAIMPACT,HYPERBEAM,IRONDEFENSE,LIGHTSCREEN,LUNGE,MUDSHOT,MUDSLAP,POISONJAB,POUNCE,PROTECT,RAINDANCE,REST,SKITTERSMACK,SLEEPTALK,SOLARBEAM,STRUGGLEBUG,SUBSTITUTE,SUPERCELLSLAM,SWIFT,TAKEDOWN,THUNDER,THUNDERBOLT,THUNDERWAVE,VOLTSWITCH,WILDCHARGE,XSCISSOR,TERABLAST
 EggGroups = Bug
 HatchSteps = 3840
@@ -20466,9 +20477,9 @@ Habitat = Mountain
 Category = Puppy
 Pokedex = This Pokémon has lived with people since times long ago. It can sense when its Trainer is in the dumps and will stick close by its Trainer's side.
 Generation = 7
+Flags = Done
 Evolutions = LYCANROC,Level,25
 RaidRanks = 1,2
-Flags = Done
 #-------------------------------
 [LYCANROC]
 Name = Lycanroc
@@ -20495,8 +20506,8 @@ Habitat = Mountain
 Category = Wolf
 Pokedex = Its quick movements confuse its enemies. Well equipped with claws and fangs, it also uses the sharp rocks in its mane as weapons.
 Generation = 7
-RaidRanks = 3,4,5
 Flags = Done
+RaidRanks = 3,4,5
 #-------------------------------
 [WISHIWASHI]
 Name = Wishiwashi
@@ -22926,9 +22937,9 @@ Habitat = Urban
 Category = Puppy
 Pokedex = This gluttonous Pokémon only assists people with their work because it wants treats. As it runs, it crackles with electricity.
 Generation = 8
+Flags = Done
 Evolutions = BOLTUND,Level,25
 RaidRanks = 1,2
-Flags = Done
 #-------------------------------
 [BOLTUND]
 Name = Boltund
@@ -22954,8 +22965,8 @@ Habitat = Urban
 Category = Dog
 Pokedex = This Pokémon generates electricity and channels it into its legs to keep them going strong. Boltund can run nonstop for three full days.
 Generation = 8
-RaidRanks = 3,4
 Flags = Done
+RaidRanks = 3,4
 #-------------------------------
 [ROLYCOLY]
 Name = Rolycoly

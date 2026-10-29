@@ -22,3 +22,8 @@ body{font-size:16px}.workspace{margin-left:0}header.topbar{height:auto;min-heigh
 /* v7: dataset markers, longer pages, and a stat total beside the six stats. */
 .done-badge{display:inline-flex;align-items:center;justify-content:center;vertical-align:middle;margin-left:7px;width:18px;height:18px;border-radius:50%;background:#e1edda;color:#398044;border:1px solid #b8d1a9;font-size:12px;font-weight:700;line-height:1}
 .stat-total{border-top:1px solid var(--line);padding-top:12px;margin-top:12px;font-weight:700}.stat-total-label{font-size:11px;color:var(--muted);font-weight:400}.page-size{display:flex;align-items:center;gap:8px;font-size:12px;color:#738365}.page-size select{padding:7px 26px 7px 10px;font-size:12px}.pagination{flex-wrap:wrap;gap:14px}
+
+/* v9: type takes priority over move category. */
+.type{background:var(--type);color:#fff;border:1px solid color-mix(in srgb,var(--type) 80%,#142c23);font-size:11px;font-weight:700;padding:6px 9px;min-width:60px;text-shadow:0 1px 1px #0002}
+.category-badge{font-size:10px;font-weight:500;padding:3px 6px;border-color:transparent;background:transparent}.category-physical{color:#a95e56}.category-special{color:#8967a4}.category-status{color:#7c8680}
+.tag-chips{gap:7px}.tag-chip{font-size:12px;border-radius:20px;padding:6px 11px;background:#edf2e7;border-color:#d8e2cd}.tag-chip:hover{background:#dfead3;border-color:#b4c99d}

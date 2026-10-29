@@ -116,3 +116,12 @@ Dữ liệu v7: 1.558 Pokémon/form, 1.051 Move, 530 Ability.
 ## Bản cập nhật v8
 
 Đồng bộ lại PBS, bản dịch, AAM Settings và danh sách sprite. Xác nhận 85 Pokémon/form có flag Done và hiện dấu ✓ cạnh tên trong Pokédex. Cập nhật mã phiên bản để trình duyệt tải dữ liệu mới.
+
+## Bản cập nhật v9
+
+- Lọc Move theo tag (Flags của Move trong PBS).
+- Bấm tag trong pop-up Move để xem các chiêu cùng tag và Pokémon học được qua level/TM/HM/Tutor/Egg.
+- Bấm tag trong pop-up Pokémon để xem các Pokémon có cùng Flags.
+- Nhãn hệ nổi bật hơn category; trang Ability không hiện ID nội bộ.
+
+Dữ liệu v9: 1558 Pokémon/form, 1064 Move, 539 Ability.
