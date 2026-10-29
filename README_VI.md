@@ -134,3 +134,7 @@ Dữ liệu v9: 1558 Pokémon/form, 1064 Move, 539 Ability.
 - Đồng bộ lại dữ liệu và các Pokémon/form có Flags Done.
 
 Dữ liệu v10 xác nhận 98 Pokémon/form có flag Done. Độ tương phản chữ nhãn hệ tối thiểu 4,64:1 trên bảng màu hiện tại.
+
+## Bản cập nhật v11
+
+Nhãn hệ trong tooltip Move dùng chữ trắng trên nền hệ đậm hơn.
