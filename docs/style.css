@@ -66,3 +66,13 @@ body{font-size:16px}.workspace{margin-left:0}header.topbar{height:auto;min-heigh
 .pokemon-tile-types{display:flex;align-items:center;justify-content:center;gap:4px;min-height:21px;max-width:100%}
 .pokemon-tile-types .type{min-width:0;margin:0;padding:4px 6px;font-size:9px}
 @media(max-width:760px){.result-meta .sort-hint{display:none}.meta-actions{margin-left:auto}.pokemon-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;padding:11px}.pokemon-tile{padding:9px 8px 11px;aspect-ratio:1/1}.pokemon-tile-name{font-size:12px}.dex-view-switch button{width:32px;height:30px}}
+
+/* Adjusted Pokédex filter and denser data rows (Moves/Abilities/Items/TMs). */
+.done-filter{display:inline-flex;align-items:center;gap:7px;min-height:40px;padding:8px 12px;border:1px solid #e2e5d9;border-radius:6px;background:#fffefb;color:#728268;font-size:13px;white-space:nowrap;cursor:pointer;user-select:none}
+.done-filter:has(input:checked){border-color:#8eab80;background:#edf4e6;color:#365b3c}
+.done-filter input{width:15px;height:15px;margin:0;accent-color:#315843;cursor:pointer}
+.done-filter:focus-within{outline:2px solid #a4c695;outline-offset:2px}
+.compact-data-table td{height:56px;padding-top:6px;padding-bottom:6px;line-height:1.55}
+.compact-data-table .description-cell,.compact-data-table .ability-cell{line-height:1.55}
+.compact-data-table .ability-detail-preview{margin-top:5px}
+@media(max-width:760px){.done-filter{font-size:12px;padding:7px 9px;min-height:37px}}
