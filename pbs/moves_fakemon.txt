@@ -205,7 +205,7 @@ TotalPP = 15
 Target = NearOther
 Priority = 0
 FunctionCode = HitTwoToFiveTimes
-Flags = CanProtect,CanMirrorMove,Pulse
+Flags = CanProtect,CanMirrorMove,Pulse,Bullet
 Description = Magical spheres strike the target 2 to 5 times.
 Animation = AURASPHERE,FAIRYWIND
 #-------------------------------
@@ -308,7 +308,7 @@ Accuracy = 100
 TotalPP = 15
 Target = NearOther
 FunctionCode = SuperEffectiveAgainstWaterIgnoreDefenseStages
-Flags = Contact,CanProtect,CanMirrorMove,Horn
+Flags = Contact,CanProtect,CanMirrorMove,Drill,Dart
 Description = Pierces Defense stat changes. Super effective on Water types.
 Animation = HORNATTACK,AQUAJET
 #-------------------------------
@@ -733,7 +733,7 @@ TotalPP = 10
 Target = NearOther
 Priority = 0
 FunctionCode = SuperEffectiveAgainstFlying
-Flags = CanProtect,CanMirrorMove,Arrow
+Flags = CanProtect,CanMirrorMove,Dart
 Description = Fires a clay dart. Super effective against Flying types.
 Animation = THOUSANDARROWS,ROCKBLAST
 #-------------------------------
@@ -1041,9 +1041,331 @@ Type = BUG
 Category = Special
 Power = 50
 Accuracy = 100
-TotalPP = 12
+TotalPP = 15
 Target = NearOther
 FunctionCode = MakeTargetWeakerToBug
 Flags = CanProtect
 EffectChance = 100
 Description = Attacks the target and makes it weaker to Bug-type moves.
+#-------------------------------
+[BERRYSMASH]
+Name = Berry Smash
+Type = GRASS
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = DoublePowerDestroyTargetBerry
+Flags = Contact,CanProtect,CanMirrorMove,Punching
+Description = Destroys the target's Berry and deals double damage if it holds one.
+#-------------------------------
+[BUZZYBUZZ]
+Name = Buzzy Buzz
+Type = ELECTRIC
+Category = Special
+Power = 60
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+Priority = 0
+FunctionCode = ParalyzeTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = Shoots a jolt of electricity that paralyzes the target.
+#-------------------------------
+[BOUNCYBUBBLE]
+Name = Bouncy Bubble
+Type = WATER
+Category = Special
+Power = 60
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+Priority = 0
+FunctionCode = HealUserByAllOfDamageDone
+Flags = CanProtect,CanMirrorMove
+Description = Restores the user's HP by the full damage dealt.
+#-------------------------------
+[SIZZLYSLIDE]
+Name = Sizzly Slide
+Type = FIRE
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+Priority = 0
+FunctionCode = BurnTarget
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 100
+Description = The user charges cloaked in fire, burning the target.
+#-------------------------------
+[GLITZYGLOW]
+Name = Glitzy Glow
+Type = PSYCHIC
+Category = Special
+Power = 80
+Accuracy = 95
+TotalPP = 15
+Target = NearOther
+Priority = 0
+FunctionCode = DamageTargetSetUserLightScreen
+Flags = CanProtect,CanMirrorMove,Light
+Description = Attacks with psychic force and sets up Light Screen.
+#-------------------------------
+[BADDYBAD]
+Name = Baddy Bad
+Type = DARK
+Category = Special
+Power = 80
+Accuracy = 95
+TotalPP = 15
+Target = NearOther
+Priority = 0
+FunctionCode = DamageTargetSetUserReflect
+Flags = CanProtect,CanMirrorMove
+Description = Attacks with dark energy and sets up Reflect.
+#-------------------------------
+[SAPPYSEED]
+Name = Sappy Seed
+Type = GRASS
+Category = Physical
+Power = 100
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+Priority = 0
+FunctionCode = DamageTargetApplyLeechSeed
+Flags = CanProtect,CanMirrorMove
+Description = Attacks with a giant stalk and plants HP-draining seeds.
+#-------------------------------
+[FREEZYFROST]
+Name = Freezy Frost
+Type = ICE
+Category = Special
+Power = 100
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+Priority = 0
+FunctionCode = DamageTargetResetAllStatStages
+Flags = CanProtect,CanMirrorMove
+Description = Attacks with an icy crystal and eliminates all stat changes.
+#-------------------------------
+[SPARKLYSWIRL]
+Name = Sparkly Swirl
+Type = FAIRY
+Category = Special
+Power = 110
+Accuracy = 80
+TotalPP = 5
+Target = NearOther
+Priority = 0
+FunctionCode = DamageTargetCureUserPartyStatus
+Flags = CanProtect,CanMirrorMove
+Description = A fragrant whirlwind that cures the party's status conditions.
+#-------------------------------
+[THERMALGEYSER]
+Name = Thermal Geyser
+Type = WATER
+Category = Special
+Power = 90
+Accuracy = 95
+TotalPP = 10
+Target = NearOther
+FunctionCode = BurnTargetFireSTABHitsUnderground
+Flags = CanProtect,CanMirrorMove
+EffectChance = 30
+Description = May burn the target. Fire types gain STAB. Hits underground targets.
+#-------------------------------
+[MIDNIGHTBEAM]
+Name = Midnight Beam
+Type = FAIRY
+Category = Special
+Power = 120
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = TwoTurnAttackOneTurnInGloomMoonlight
+Flags = CanProtect,CanMirrorMove,Pulse,Cosmic
+Description = Charges moonlight, then attacks. Fires immediately in Gloom Moonlight.
+#-------------------------------
+[DESPAIRKISS]
+Name = Despair Kiss
+Type = DARK
+Category = Special
+Power = 50
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = HealUserByThreeQuartersOfDamageDone
+Flags = Contact,CanProtect,CanMirrorMove,Kissing
+Description = A despairing kiss that restores HP by three quarters of the damage dealt.
+#-------------------------------
+[MOONLIGHTPRANCE]
+Name = Moonlight Prance
+Type = DARK
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = UserStealTargetPositiveStatStages
+Flags = CanProtect,CanMirrorMove
+Description = Steals the target's stat boosts before attacking.
+#-------------------------------
+[DRAINBRAIN]
+Name = Drain Brain
+Type = PSYCHIC
+Category = Status
+Accuracy = 100
+TotalPP = 10
+Target = NearFoe
+FunctionCode = LowerTargetSpAtk1HealUserQuarter
+Flags = CanProtect,CanMirrorMove
+Description = Lowers the target's Sp. Atk and restores a quarter of the user's HP.
+#-------------------------------
+[CHILLINGWHISP]
+Name = Chilling Whisp
+Type = ICE
+Category = Status
+Accuracy = 85
+TotalPP = 15
+Target = NearOther
+FunctionCode = FrostbiteTarget
+Flags = CanProtect,CanMirrorMove
+Description = Inflicts frostbite on the target with intense cold.
+#-------------------------------
+[AURORADANCE]
+Name = Aurora Dance
+Type = ICE
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = RaiseUserMainStats1OnceInHail
+Flags = Dance,Cosmic
+Description = Raises all five main stats once per battle. Only works in hail.
+#-------------------------------
+[UPLIFT]
+Name = Uplift
+Type = FAIRY
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = UserAndAllies
+FunctionCode = RaiseUserAndAlliesSpeed1
+Description = Raises the Speed of the user and its allies.
+#-------------------------------
+[STARSTORM]
+Name = Starstorm
+Type = FAIRY
+Category = Special
+Power = 130
+Accuracy = 90
+TotalPP = 5
+Target = NearOther
+FunctionCode = LowerUserSpAtk2
+Flags = CanProtect,CanMirrorMove,Cosmic
+Description = A storm of stars strikes the target, harshly lowering the user's Sp. Atk.
+#-------------------------------
+[SOLARGLIDE]
+Name = Solar Glide
+Type = GRASS
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = IncreasedPriorityInSunshine
+Flags = CanProtect
+Description = The user glides into the target. This move has increased priority in sunshine.
+#-------------------------------
+[VERDANTANGER]
+Name = Verdant Anger
+Type = GRASS
+Category = Special
+Power = 120
+Accuracy = 85
+TotalPP = 5
+Target = NearOther
+FunctionCode = LowerTargetSpeed2
+Flags = CanProtect,CanMirrorMove
+EffectChance = 40
+Description = A shock wave that may harshly lower the target's Speed.
+#-------------------------------
+[ROSEWHIP]
+Name = Rose Whip
+Type = GRASS
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = LowerTargetDef1ParalyzePoisonOrSleep
+Flags = CanProtect,CanMirrorMove,Lash
+EffectChance = 30
+Description = May lower Defense and inflict paralysis, poison, or sleep.
+#-------------------------------
+[RAPIDRIVER]
+Name = Rapid River
+Type = WATER
+Category = Physical
+Power = 45
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = HitTwoTimesDrenchedTarget
+Flags = CanProtect,CanMirrorMove,Pulse
+EffectChance = 10
+Description = Strikes twice with rushing water. Each hit may leave the target drenched.
+#-------------------------------
+[STELLARPUNCH]
+Name = Stellar Punch
+Type = FAIRY
+Category = Physical
+Power = 75
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = LowerTargetAttack1
+EffectChance = 50
+Flags = Contact,CanProtect,CanMirrorMove,Punching,Cosmic
+Description = Punches with starlight force. May lower Attack.
+#-------------------------------
+[MOONYPUNCH]
+Name = Moony Punch
+Type = DARK
+Category = Physical
+Power = 75
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = LowerTargetSpAtk1
+EffectChance = 50
+Flags = Contact,CanProtect,CanMirrorMove,Punching,Cosmic
+Description = Punches with moonlight force. May lower Sp. Atk.
+#-------------------------------
+[STARCRASH]
+Name = Star Crash
+Type = FAIRY
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 10
+Target = NearFoe
+FunctionCode = RecoilThirdOfDamageDealt
+Flags = Contact,CanProtect,CanMirrorMove,Cosmic
+Description = Strikes the foe like a falling star. 33% recoil damage.
+#-------------------------------
+[STARLIGHTRECITAL]
+Name = Starlight Recital
+Type = FAIRY
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = UserAndAllies
+FunctionCode = HealUserAndAlliesQuarterOfTotalHPCureStatus
+Flags = Sound
+Description = Heals HP and status of itself and allies in battle.
