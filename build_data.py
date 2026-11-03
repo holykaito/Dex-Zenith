@@ -30,6 +30,7 @@ for path in sorted(P.glob('pokemon_forms*.txt')):
         species[r['id']]={**species.get(base,{}),**r,'base':base}
 innates={r['id']:split(r.get('Innates')) for r in records(P/'innate_sets.txt')}
 for i,(key,r) in enumerate(species.items()):
+    r['done']='Done' in split(r.get('Flags'))
     r['dex']=baseids.index(r.get('base',key))+1 if r.get('base',key) in baseids else i+1
     r['innates']=innates.get(key,[])
     raw=split(r.get('Moves'));r['learnset']=[{'level':int(raw[i]),'move':raw[i+1]} for i in range(0,len(raw)-1,2)]
@@ -78,6 +79,7 @@ block=settings.split('LEVELS_TO_UNLOCK =',1)[1].split('INNATE_RANDOMIZER',1)[0]
 D['innateUnlocks']={key:[int(x) for x in re.findall(r'\d+',levels)] for key,levels in re.findall(r'\[:([A-Z0-9_]+),([^\]]+)\]',block)} if active else {}
 # Gigantamax forms are intentionally omitted from the public guide.
 D['pokemon']=[p for p in D['pokemon'] if not (p.get('GmaxMove') or 'gigantamax' in p.get('FormName','').lower())]
+D['meta']['doneCount']=sum(p['done'] for p in D['pokemon'])
 
 # Combine paired translations: game-specific translations override core only when translated.
 import unicodedata
