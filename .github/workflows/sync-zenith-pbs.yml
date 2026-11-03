@@ -1,0 +1,53 @@
+name: Refresh Zenith Dex from game PBS
+
+on:
+  push:
+    branches:
+      - feat/sync-game-pbs-and-grid-view-20261103
+    paths:
+      - .github/workflows/sync-zenith-pbs.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Import game PBS and latest translations
+        run: python update_repo.py
+      - name: Build website data from imported PBS
+        run: python build_data.py
+      - name: Check generated JSON and Pokemon records
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          base = pathlib.Path("docs/data")
+          data = json.loads((base/"zenith.json").read_text(encoding="utf-8"))
+          vi = json.loads((base/"vi.json").read_text(encoding="utf-8"))
+          assert len(data["pokemon"]) > 1000
+          assert len(data["moves"]) > 500
+          assert len(data["abilities"]) > 100
+          assert data["meta"]["repo"] == "holykaito/Pokemon-Lightest-Platinum-v2024"
+          assert all(p["bst"] == sum(p["stats"]) for p in data["pokemon"])
+          assert all(p["id"] for p in data["pokemon"])
+          assert "pokemon" in vi and "moves" in vi
+          print("Data verified:", {key: len(data[key]) for key in ("pokemon","moves","abilities","items")})
+          PY
+      - name: Commit refreshed source data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pbs/ sources.json sprites.json AAM_Settings.rb Text_vietnamese_core/ Text_vietnamese_game/ docs/data/
+          if ! git diff --cached --quiet; then
+            git commit -m "data: regenerate Zenith Dex from latest game PBS [skip ci]"
+            git push
+          fi

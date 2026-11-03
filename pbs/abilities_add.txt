@@ -39,6 +39,14 @@ Description = Adds the Ghost-type to all Pokémon on the field.
 Name = Aura Manipulation
 Description = Buff damage of Aura Sphere.
 #-------------------------------
+[BADLUCK] ###
+Name = Bad Luck
+Description = Brings misfortune to opposing Pokémon.
+#-------------------------------
+[BALEFULGLOW] ###
+Name = Baleful Glow
+Description = Attacks using the target's offensive stats.
+#-------------------------------
 [BATTLEGENES] ###
 Name = Battle Genes
 Description = Powers up moves that match the target's type.
@@ -99,6 +107,11 @@ Description = Creates Trick Room when entering battle.
 Name = Charge Rush
 Description = Boosts Attack and Speed on its first turn.
 #-------------------------------
+[CHARGEDTEMPER] ###
+Name = Charged Temper
+Description = Raises Attack when using or targeted by Electric moves.
+Detail = Raises Attack by 1 stage after dealing damage with an Electric-type move.\n\nAlso raises Attack by 1 stage when an opposing Pokémon successfully targets it with an Electric-type move, regardless of whether the move hits or deals damage.\n\nThe targeting effect activates after the move announcement but before redirection by Lightning Rod.\n\nThe targeting effect does not activate during the charging turn of a two-turn move or when targeted by an ally.\n\nEach effect can activate only once per move use, including multi-hit moves.
+#-------------------------------
 [CHEAPTACTICS] ####
 Name = Cheap Tactics
 Description = Uses Scratch when this Pokémon enters battle.
@@ -127,6 +140,14 @@ Description = Foes' dances reverse stat changes and cause confusion.
 Name = Debilitate
 Description = Contact moves weaken targets with status conditions.
 #-------------------------------
+[BURROWIN] ###
+Name = Burrow In
+Description = Automatically uses Dig upon entering battle.
+#-------------------------------
+[DEEPWOUND] ###
+Name = Deep Wound
+Description = Slicing hits have a 50% chance to cause Bleed.
+#-------------------------------
 [DISTORTION] ###
 Name = Distortion
 Description = When this Pokémon hits an enemy, it reduces any stat.
@@ -134,6 +155,10 @@ Description = When this Pokémon hits an enemy, it reduces any stat.
 [DODGE] ###
 Name = Dodge
 Description = User has chance to avoid any moves.
+#-------------------------------
+[DRAGONSLAYER] ###
+Name = Dragon Slayer
+Description = Hits Dragons harder and resists Dragon moves.
 #-------------------------------
 [DREAMCATCHER] ###
 Name = Dream Catcher
@@ -155,25 +180,34 @@ Description = The user's sound-based moves never miss.
 Name = Eco-Cloak
 Description = Blocks its second type to boost Defense and neutralizes weaknesses.
 #-------------------------------
+[ELECTROFLUX] ###
+Name = Electroflux
+Description = Evades Ground moves while benefiting from Electric Terrain.
+Detail = Grants immunity to damaging Ground-type moves, just like Levitate.\n\nThe Pokémon remains airborne, avoiding Spikes, Toxic Spikes, Sticky Web, and other effects that require it to be grounded.\n\nUnlike Levitate, the Pokémon still benefits from Electric Terrain while airborne, including increased Electric-type move power, sleep prevention, and Electric Seed activation.\n\nGround immunity is negated by Gravity, Iron Ball, Ingrain, Smack Down, and Mold Breaker. Moves capable of hitting airborne targets can still hit.
+#-------------------------------
 [ETERNALDREAM] ###
 Name = Eternal Dream
 Description = It recovers HP when attacking a sleeping enemy.
 #-------------------------------
+[EVEBOOSTSYNC] ###
+Name = Eveboost Sync
+Description = Party Eeveelutions grant stat boosts on entry.
+#-------------------------------
+[EXCAVATOR] ###
+Name = Excavator
+Description = Ground attacks raise Defense and clear its side's hazards.
+#-------------------------------
+[FAIRYTALES] ###
+Name = Fairy Tales
+Description = Reduces damage taken while Misty Terrain is active.
+#-------------------------------
+[FALSEFRONT]
+Name = False Front
+Description = Adds Fighting or Fairy or Dark-type when entering battle.
+#-------------------------------
 [FATALPRECISION] ###
 Name = Fatal Precision
 Description = Super-effective moves hit true and crit more often.
-#-------------------------------
-[FLORESCENCE] ###
-Name = Florescence
-Description = Gives Grass-type moves priority at high HP.
-#-------------------------------
-[FLUIDGUARD] ###
-Name = Fluid Guard
-Description = Takes less damage the faster it is than the attacker.
-#-------------------------------
-[FORTITUDE] ###
-Name = Fortitude
-Description = When a stat is lowered by an opponent, its Defense is increased.
 #-------------------------------
 [FIELDEXPLORER]
 Name = Field Explorer
@@ -183,9 +217,21 @@ Description = Powers up field moves.
 Name = Fight's Spirit
 Description = Add Fighting-type to user.
 #-------------------------------
+[FLORESCENCE] ###
+Name = Florescence
+Description = Gives Grass-type moves priority at high HP.
+#-------------------------------
+[FLUIDGUARD] ###
+Name = Fluid Guard
+Description = Takes less damage the faster it is than the attacker.
+#-------------------------------
 [FLOCK] ###
 Name = Flock
 Description = Powers up Flying-type moves when suffering.
+#-------------------------------
+[FLOODING] ###
+Name = Flooding
+Description = Swamp Terrain boosts Sp. Atk but drains HP.
 #-------------------------------
 [FLUFFUP] ###
 Name = Fluff Up
@@ -195,9 +241,18 @@ Description = Levitates and powers up moves when striking first.
 Name = Flying Nimbus
 Description = Immune to Ground-type moves and powers up moves first.
 #-------------------------------
-[FALSEFRONT]
-Name = False Front
-Description = Adds Fighting or Fairy or Dark-type when entering battle.
+[FORTITUDE] ###
+Name = Fortitude
+Description = When a stat is lowered by an opponent, its Defense is increased.
+#-------------------------------
+[FREEZEALL]
+Name = Freeze All
+Description = Each damaging hit has a 20% chance to freeze the opposing Pokémon.
+#-------------------------------
+[FULLMOON]
+Name = Full Moon
+Description = Moves always benefit from Gloom Moonlight.
+Detail = All moves used by the Pokémon behave as though Gloom Moonlight were active, regardless of the actual weather.\n\nDark-type moves deal 1.5 times their normal damage.\n\nMoonlight restores 75% of the user's maximum HP, while Synthesis and Morning Sun restore only 25%.\n\nNightfelling always hits, and Midnight Beam can attack immediately without a charging turn.\n\nThe Ability does not summon, replace, or extend weather. Its effects apply only when the Pokémon uses a move, not during end-of-turn weather effects.
 #-------------------------------
 [GIANTWINGS]
 Name = Giant Wings
@@ -239,6 +294,10 @@ Description = Boosts the user's Sp. Atk each turn spent confused.
 Name = Heartbreaker
 Description = Increases the power of moves against targets infatuated.
 #-------------------------------
+[HEATVEIL]
+Name = Heat Veil
+Description = Raises 50% Sp. Def in sunlight.
+#-------------------------------
 [HUNTEDONE] ###
 Name = Hunted One
 Description = Resistance and evasion ability is drastically reduced.
@@ -255,6 +314,10 @@ Description = Boosts Sp.Attack after knocking out any Pokémon.
 Name = Hydroponic
 Description = Boosts Grass moves in rain or Swamp Terrain.
 #-------------------------------
+[HYPERCHARGE] ###
+Name = HYPERCHARGE
+Description = Gives Electric-type moves priority at high HP.
+#-------------------------------
 [ICEDEW] ###
 Name = Ice Dew
 Description = Powers up Ice moves if hit by an Ice move.
@@ -263,9 +326,14 @@ Description = Powers up Ice moves if hit by an Ice move.
 Name = Icy Veins
 Description = Boosts the user's Ice and Water-type moves in hail.
 #-------------------------------
-[INFLATABLE] ###
+[IGNITIONCYCLE] ###
+Name = Ignition Cycle
+Description = Gains Speed at an HP cost, resetting and healing at max Speed.
+#-------------------------------
+[INFLATABLE]
 Name = Inflatable
-Description = Inhales wind-based moves to expand the body & boost defense.
+Description = Raises both defenses when hit by Fire or Flying moves.
+Detail = Raises Defense and Sp. Def by 1 stage when hit by a damaging Fire-type or Flying-type move.\n\nThe effect activates after the Pokémon takes damage, regardless of whether the move makes contact.\n\nEach successful hit can activate the Ability, including individual hits of multi-hit moves.\n\nThe effect does not activate if the move misses, deals no damage, or is absorbed by a Substitute.\n\nThe Ability does not reduce incoming damage.
 #-------------------------------
 [INTOXICATE] ###
 Name = Intoxicate
@@ -315,6 +383,15 @@ Description = Normal-type moves become Dark-type moves and boosted.
 Name = Mind Insight
 Description = Normal gains Psychic's strengths and hits Ghost. Psychic gets STAB.
 #-------------------------------
+[MINDWARD] ###
+Name = Mindward
+Description = Raised 50% the Pokémon's Sp. Def while Psychic Terrain is active.
+#-------------------------------
+[MOLTENDOWN] ###
+Name = Molten Down
+Description = Fire moves melt through Rock types.
+Detail = Fire-type moves are super effective against Rock instead of being resisted. Other typings apply normally.\n\nDoes not increase fixed damage or bypass Fire-immunity abilities.
+#-------------------------------
 [MULTIHEADED] ###
 Name = Multi Headed
 Description = Hits extra times based on the Pokémon's heads.
@@ -363,6 +440,10 @@ Description = Guards against status and damage when HP is high.
 Name = Powder Burst
 Description = Gives powder moves +1 priority.
 #-------------------------------
+[PREMONITION]
+Name = Premonition
+Description = Halves the first attack hit received each time enters battle.
+#-------------------------------
 [PRETENTIOUS] ###
 Name = Pretentious
 Description = Knockouts raise its critical-hit ratio.
@@ -370,6 +451,11 @@ Description = Knockouts raise its critical-hit ratio.
 [PYROMANCY] ###
 Name = Pyromancy
 Description = Move inflicts burn x5 as often.
+#-------------------------------
+[MARKSMAN] ###
+Name = Marksman
+Description = Bullet, bomb and dart moves never miss.
+Detail = Bullet, Bomb or Dart moves ignore accuracy and evasion modifiers and cannot be redirected by effects such as Follow Me, Rage Powder, Spotlight, Lightning Rod or Storm Drain.\n\nDoes not bypass Protect, type or ability immunities, or semi-invulnerable turns.
 #-------------------------------
 [NINELIVES]
 Name = Nine Lives
@@ -407,17 +493,29 @@ Description = Electric moves hit Electric super effectively and pierce absorptio
 Name = Paranoid
 Description = Doubles Sp. Def but takes double damage from Psychic-type moves.
 #-------------------------------
+[PARASITEHOST] ###
+Name = Parasite Host
+Description = Lets the Pokémon act once even after being knocked out.
+#-------------------------------
+[PARTINGQUILLS] ###
+Name = Parting Quills
+Description = Scatters opposing Spikes when switching out.
+#-------------------------------
 [PRECISEFIST]
 Name = Precise Fist
 Description = Punching moves gain crit chance and doubled secondary effect.
+#-------------------------------
+[PLAYFULAGGRO] ###
+Name = Playful Aggro
+Description = Boosts Sp. Atk by 50% while statused and ignores Frostbite.
 #-------------------------------
 [PRIDEFULGUARD]
 Name = Prideful Guard
 Description = Increases Defense and Special Defense when HP is below half.
 #-------------------------------
-[HYPERCHARGE] ###
-Name = HYPERCHARGE
-Description = Gives Electric-type moves priority at high HP.
+[RAGNAROK] ###
+Name = Ragnarok
+Description = Cures status and lowered stats when HP falls below half.
 #-------------------------------
 [RAINMIRAGE] ###
 Name = Rain Mirage
@@ -426,10 +524,6 @@ Description = Boosts the Pokémon's evasiveness in a rain.
 [RAMPAGE] ###
 Name = Rampage
 Description = No recharge move needed when K.O. target.
-#-------------------------------
-[PARASITEHOST] ###
-Name = Parasite Host
-Description = Lets the Pokémon act once even after being knocked out.
 #-------------------------------
 [REFUGE] ###
 Name = Refuge
@@ -443,9 +537,9 @@ Description = Recovers health gradually when seriously injured.
 Name = Refractive
 Description = Boosts light moves and gains their type.
 #-------------------------------
-[RAGNAROK] ###
-Name = Ragnarok
-Description = Cures status and lowered stats when HP falls below half.
+[RIMELAYER] ###
+Name = Rime Layer
+Description = Ice moves build up Defense or Sp. Def.
 #-------------------------------
 [ROLLER] ###
 Name = Roller
@@ -479,13 +573,30 @@ Description = Restores HP each turn, healing more below half HP.
 Name = Shatter Mark
 Description = Contact and Rock moves may inflict Splinter.
 #-------------------------------
+[SHORTCIRCUIT] ###
+Name = Short Circuit
+Description = Powers up Electric moves more as HP falls.
+#-------------------------------
 [SHOWDOWNMODE] ###
 Name = Showdown Mode
 Description = Enhance stats when in danger, but gradually weaken
 #-------------------------------
+[SINGER] ###
+Name = Singer
+Description = Immediately copies another Pokémon's sound moves.
+Detail = When another Pokémon successfully uses a Sound move, this Pokémon immediately uses the same move.\n\nThe copied move does not consume PP and does not count as the Pokémon's normal action for the turn.\n\nBoth allies' and opponents' Sound moves can trigger this Ability.\n\nThe copied move follows the targeting rules of Dancer and retains its normal effects.\n\nMoves copied through Singer cannot activate Singer again.\n\nSinger activates only if the original move was successfully executed.
+#-------------------------------
+[SIPHONLEAVES] ###
+Name = Siphon Leaves
+Description = Sharp leaves hurt contact attackers and restore HP.
+#-------------------------------
 [SLEET] ###
 Name = Sleet
 Description = During hail, opposing Pokémon at the end of each turn.
+#-------------------------------
+[SOLARPSYCHE] ###
+Name = Solar Psyche
+Description = Doubles Psychic-type damage in sunlight.
 #-------------------------------
 [SOULDEVOURING] ###
 Name = Soul Devouring
@@ -530,6 +641,11 @@ Description = Lowering a foe's stats with moves raises its own.
 [SUDDENSLASH] ###
 Name = Sudden Slash
 Description = On first turn out, slicing moves gain priority.
+#-------------------------------
+[SWEETBLOOM] ###
+Name = Sweet Bloom
+Description = Uses Sweet Scent on entry and after rain ends.
+Detail = Automatically uses Sweet Scent upon entering battle, lowering nearby opposing Pokémon's Evasion by two stages if successful.\n\nAutomatically uses Sweet Scent again whenever Rain or Heavy Rain ends or changes into non-rain weather while this ability is active. Changing between Rain and Heavy Rain does not trigger it.\n\nThese extra uses require no PP or moveset slot and do not replace the Pokémon's normal action. Switching out and returning allows the entry effect to activate again.\n\nSweet Scent follows its normal targeting, protection, reflection and stat-change rules. Cloud Nine and Air Lock temporarily suppressing weather do not count as rain ending.
 #-------------------------------
 [TENACITY] ###
 Name = Tenacity
