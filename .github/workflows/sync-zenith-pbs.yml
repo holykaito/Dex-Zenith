@@ -3,7 +3,8 @@ name: Refresh Zenith Dex from game PBS
 on:
   push:
     branches:
-      - feat/sync-game-pbs-and-grid-view-20261103
+      - main
+      - data/refresh-from-game-20261103-latest
     paths:
       - .github/workflows/sync-zenith-pbs.yml
   workflow_dispatch:
