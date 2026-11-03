@@ -46,3 +46,23 @@ body{font-size:16px}.workspace{margin-left:0}header.topbar{height:auto;min-heigh
 
 /* v13: popup navigation and linked ability details. */
 .popup-back{border:1px solid #d4dec8;background:#edf2e6;color:#536e40;border-radius:6px;padding:8px 12px;font-size:12px;font-weight:600}.popup-back:hover{background:#e0eacf}.inline-reference{color:#426f37;text-decoration:underline;text-decoration-color:#9db98d;text-underline-offset:3px;font-weight:500}.inline-reference:hover{color:#896b30;text-decoration-color:currentColor}.ability-detail-copy{white-space:pre-line;font-size:14px;line-height:1.9;color:#687b59}.ability-detail-preview{margin-top:10px;font-size:12px}.ability-detail-preview>summary{cursor:pointer;color:#567743;font-weight:500;display:list-item}.ability-detail-preview .ability-detail-copy{margin-top:10px;padding:12px 14px;border-left:2px solid #ccdaba;background:#f6f8f0;border-radius:0 6px 6px 0;font-size:13px}
+
+
+/* Compact Pokédex view: retains the same filtering, sorting, pagination and detail popups. */
+.meta-actions{display:flex;align-items:center;justify-content:flex-end;gap:14px}
+.dex-view-switch{display:inline-flex;gap:3px;padding:3px;border:1px solid #dce5d5;border-radius:8px;background:#f5f8f1}
+.dex-view-switch button{width:35px;height:32px;padding:0;border:0;border-radius:5px;background:transparent;color:#74866e;font-size:23px;line-height:1;cursor:pointer;display:grid;place-items:center}
+.dex-view-switch button.active{background:#315843;color:#fff;box-shadow:0 1px 4px #183d301b}
+.dex-view-switch button:hover:not(.active){background:#e7efe1;color:#315843}
+.dex-view-switch button:focus-visible,.pokemon-tile:focus-visible{outline:3px solid #9ac38a;outline-offset:2px}
+.pokemon-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:12px;padding:18px}
+.pokemon-tile{display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:3px;aspect-ratio:1/1;padding:11px 9px 12px;text-align:center;border:1px solid #e3eadb;border-radius:9px;background:#fcfdf9;min-width:0;color:var(--ink);transition:border-color .15s,background .15s,transform .15s}
+.pokemon-tile:hover{border-color:#adc7a0;background:#f4f8ef;transform:translateY(-2px)}
+.pokemon-tile-top{display:flex;align-items:center;justify-content:space-between;width:100%;min-height:14px}
+.pokemon-tile .dex-no{font-size:10px;color:#929e87;width:auto}
+.pokemon-tile .done-badge{margin-left:auto}
+.pokemon-tile-sprite{display:flex;align-items:center;justify-content:center;flex:1;min-height:70px;width:100%}
+.pokemon-tile-name{font-size:12px;font-weight:700;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+.pokemon-tile-types{display:flex;align-items:center;justify-content:center;gap:4px;min-height:21px;max-width:100%}
+.pokemon-tile-types .type{min-width:0;margin:0;padding:4px 6px;font-size:9px}
+@media(max-width:760px){.result-meta .sort-hint{display:none}.meta-actions{margin-left:auto}.pokemon-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;padding:11px}.pokemon-tile{padding:9px 8px 11px;aspect-ratio:1/1}.pokemon-tile-name{font-size:12px}.dex-view-switch button{width:32px;height:30px}}
