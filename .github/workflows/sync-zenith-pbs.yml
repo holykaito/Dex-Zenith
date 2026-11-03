@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - data/refresh-from-game-20261103-latest
+      - fix/done-flags-snapshot-20261103
     paths:
       - .github/workflows/sync-zenith-pbs.yml
   workflow_dispatch:
@@ -40,6 +41,11 @@ jobs:
           assert data["meta"]["repo"] == "holykaito/Pokemon-Lightest-Platinum-v2024"
           assert all(p["bst"] == sum(p["stats"]) for p in data["pokemon"])
           assert all(p["id"] for p in data["pokemon"])
+          by_id = {p["id"]: p for p in data["pokemon"]}
+          assert data["meta"]["doneCount"] == sum(bool(p["done"]) for p in data["pokemon"])
+          assert all(p["done"] == ("Done" in p.get("Flags", "").split(",")) for p in data["pokemon"])
+          assert all(by_id[p]["done"] for p in ("TOGEPI", "TOGETIC", "TOGEKISS"))
+          print("Pokédex Done flags:", data["meta"]["doneCount"])
           assert "pokemon" in vi and "moves" in vi
           print("Data verified:", {key: len(data[key]) for key in ("pokemon","moves","abilities","items")})
           PY
