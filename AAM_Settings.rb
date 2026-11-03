@@ -65,12 +65,25 @@ module Settings
   #-----------------------------------------------------------------------------
   LEVELS_TO_UNLOCK =  [
   #Kanto
+  [:VENUSAUR, 1, 1, 65],
+  [:VENUSAUR_1, 1, 1, 65],
+  [:CHARIZARD, 1, 1, 65],
+  [:CHARIZARD_1, 1, 1, 65],
+  [:CHARIZARD_2, 1, 1, 65],
+  [:BLASTOISE, 1, 1, 65],
+  [:BLASTOISE_1, 1, 1, 65],
   [:PIDGEY, 1, 15], 
   [:PIDGEOTTO, 1, 15, 50],
   [:PIDGEOT, 1, 15, 50],
   [:PIDGEOT_1, 1, 15, 50],
   [:RATICATE, 1, 30, 50],
   [:RATICATE_1, 1, 30, 50],
+  [:PIKACHU, 1, 25],
+  [:RAICHU, 1, 25, 60],
+  [:RAICHU_1, 1, 25, 60],
+  [:CLEFABLE, 1, 1, 60],
+  [:CLEFABLE_1, 1, 1, 60],
+  [:WIGGLYTUFF, 1, 1, 60],
   [:MEOWTH, 1, 15],
   [:MEOWTH_1, 1, 15],
   [:MEOWTH_2, 1, 20],
@@ -81,6 +94,15 @@ module Settings
   [:SEAKING, 1, 20, 55],
   [:GYARADOS, 1, 50, 70],
   [:GYARADOS_1, 1, 50, 70],
+  [:EEVEE, 1, 20],
+  [:VAPOREON, 1, 30, 60],
+  [:JOLTEON, 1, 30, 65],
+  [:FLAREON, 1, 30, 65],
+  [:ESPEON, 1, 30, 65],
+  [:UMBREON, 1, 30, 65],
+  [:LEAFEON, 1, 30, 65],
+  [:GLACEON, 1, 30, 65],
+  [:SYLVEON, 1, 30, 65],
   
   #Johto
   [:FURRET, 1, 1, 50],
@@ -121,6 +143,10 @@ module Settings
   [:PATRAT, 1, 15],
   [:WATCHOG, 1, 15, 55],
   [:LIEPARD, 1, 35, 60],
+  
+  #Kalos
+  [:BUNNELBY, 1, 15],
+  [:DIGGERSBY, 1, 15, 55],
   
   #Alola
   [:LYCANROC, 1, 1, 60],
